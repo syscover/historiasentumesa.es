@@ -1,0 +1,190 @@
+.los-sellos__container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  z-index: 9999;
+  display: block;
+  background-color: #eef1f2;
+  padding: 90px 0px;
+  overflow: hidden;
+  .text{
+    font-size: 14px;
+    padding-bottom: 16px;
+    margin-bottom: 14px;
+    a{
+      text-decoration: underline;
+    }
+  }
+  .footer{
+    text-align: center;
+    margin: 40px 0 0 0;
+    a{
+      font-size: 12px;
+      @include bp($sm){
+        font-size: 14px;
+      }
+    }
+  }
+  h3{
+    font-size: 1.5rem;
+    font-family: 'brandon', sans-serif;
+    text-transform: uppercase;
+    margin-top: 80px 0 30px 0;
+    width: 90%;
+    max-width: 480px;
+    @include bp($sm){
+      font-size: 2rem;
+    }
+  }
+}
+.los-sellos__title-container{
+  display: block;
+  @include bp($sm){
+    text-align: right;
+  }
+}
+.los-sellos__title{
+  margin: 0 0 10px 20px;
+  font-size: 34px;
+  letter-spacing: 3px;
+  padding: 0 10px;
+  position: relative;
+  display: inline-block;
+  &:after,
+  &:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    width: 0;
+    height: 4px;
+    background-color: #c4b8b5;
+    transition: all .3s ease-in-out;
+    @include bp($sm){
+      margin-top: -5px;
+      height: 8px;
+    }
+  }
+  &:after{
+    right:0;
+  }
+  &:before{
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: -1;
+    width: 100%;
+  }
+}
+.los-sellos__columns{
+  max-width: 860px;
+  margin: 0 auto;
+}
+.los-sellos__column{
+  padding: 20px;
+}
+.los-sellos__img{
+  text-align: center;
+  img{
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+
+  }
+}
+.los-sellos__desc{
+  h2{
+    font-size:18px;
+    line-height: 22px;
+    margin: 20px 0;
+  }
+  p{
+    margin: 20px 0;
+    font-size:16px;
+    line-height: 24px;
+    font-weight: 400;
+    color:#191919;
+  }
+}
+.los-sellos__list{
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+.los-sellos__column--igp{
+  text-align: right;
+}
+
+
+@include bp(640px){
+  .los-sellos__columns{
+    display: flex;
+  }
+  .los-sellos__column--dop{
+    .los-sellos__img{
+      margin-right: -10px;
+    }
+  }
+  .los-sellos__column--igp{
+    text-align: left;
+    .los-sellos__img{
+      margin-left: -10px;
+      text-align: left;
+    }
+  }
+  .los-sellos__column--dop,
+  .los-sellos__img,
+  .los-sellos__title{
+    text-align: right;
+  }
+  .los-sellos__img{
+    img{
+      max-width: 130px;
+    }
+  }
+  .los-sellos__title{
+    font-size: 48px;
+  }
+  .los-sellos__desc{
+    min-height: 260px;
+  }
+}
+@include bp(980px) {
+  .los-sellos__title{
+    font-size: 60px;
+  }
+  .los-sellos__desc{
+    min-height: 215px;
+  }
+}
+
+@include bp(1024px) {
+  .los-sellos__container{
+    padding: 90px 160px;
+
+  }
+  .los-sellos__column{
+    padding: 20px 40px;
+  }
+  .los-sellos__column--dop{
+    .los-sellos__img{
+      margin-right: -30px;
+    }
+  }
+  .los-sellos__column--igp{
+    .los-sellos__img{
+      margin-left: -30px;
+    }
+  }
+  .los-sellos__desc{
+    min-height: 260px;
+  }
+}
+@include bp(1280px) {
+  .los-sellos__desc{
+    min-height: 210px;
+  }
+}

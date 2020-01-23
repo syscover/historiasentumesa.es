@@ -1,0 +1,235 @@
+/* W3.CSS 4.04 Apr 2017 by Jan Egil and Borge Refsnes */
+
+$gutter: 30px;
+
+.row{
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.row:after,
+.row:before,
+.row-padding:after,
+.row-padding:before{
+  content: "";
+  display: table;
+  clear: both
+}
+.row-padding,
+.row-padding >.col {
+  padding: 0 $gutter;
+}
+
+.col-padding{
+  padding: 0 $gutter;
+}
+
+.col{
+  //float: left;
+  width: 100%;
+  margin: 0 auto;
+}
+.col.s1 {
+  width: 8.33333%
+}
+.col.s2 {
+  width: 16.66666%
+}
+.col.s3 {
+  width: 24.99999%
+}
+.col.s4 {
+  width: 33.33333%
+}
+.col.s5 {
+  width: 41.66666%
+}
+.col.s6 {
+  width: 49.99999%
+}
+.col.s7 {
+  width: 58.33333%
+}
+.col.s8 {
+  width: 66.66666%
+}
+.col.s9 {
+  width: 74.99999%
+}
+.col.s10 {
+  width: 83.33333%
+}
+.col.s11 {
+  width: 91.66666%
+}
+.col.s12 {
+  width: 99.99999%
+}
+@media (min-width: $sm) {
+  .col.m1 {
+    width: 8.33333%
+  }
+  .col.m2 {
+    width: 16.66666%
+  }
+  .col.m3,
+  .quarter {
+    width: 24.99999%
+  }
+  .col.m4,
+  .third {
+    width: 33.33333%
+  }
+  .col.m5 {
+    width: 41.66666%
+  }
+  .col.m6,
+  .half {
+    width: 49.99999%
+  }
+  .col.m7 {
+    width: 58.33333%
+  }
+  .col.m8,
+  .twothird {
+    width: 66.66666%
+  }
+  .col.m9,
+  .threequarter {
+    width: 74.99999%
+  }
+  .col.m10 {
+    width: 83.33333%
+  }
+  .col.m11 {
+    width: 91.66666%
+  }
+  .col.m12 {
+    width: 99.99999%
+  }
+}
+@media (min-width: $md) {
+  .col.l1 {
+    width: 8.33333%
+  }
+  .col.l2 {
+    width: 16.66666%
+  }
+  .col.l3 {
+    width: 24.99999%
+  }
+  .col.l4 {
+    width: 33.33333%
+  }
+  .col.l5 {
+    width: 41.66666%
+  }
+  .col.l6 {
+    width: 49.99999%
+  }
+  .col.l7 {
+    width: 58.33333%
+  }
+  .col.l8 {
+    width: 66.66666%
+  }
+  .col.l9 {
+    width: 74.99999%
+  }
+  .col.l10 {
+    width: 83.33333%
+  }
+  .col.l11 {
+    width: 91.66666%
+  }
+  .col.l12 {
+    width: 99.99999%
+  }
+}
+
+@media (min-width: $lg) {
+  .col.xl1 {
+    width: 8.33333%
+  }
+  .col.xl2 {
+    width: 16.66666%
+  }
+  .col.xl3 {
+    width: 24.99999%
+  }
+  .col.xl4 {
+    width: 33.33333%
+  }
+  .col.xl5 {
+    width: 41.66666%
+  }
+  .col.xl6 {
+    width: 49.99999%
+  }
+  .col.xl7 {
+    width: 58.33333%
+  }
+  .col.xl8 {
+    width: 66.66666%
+  }
+  .col.xl9 {
+    width: 74.99999%
+  }
+  .col.xl10 {
+    width: 83.33333%
+  }
+  .col.xl11 {
+    width: 91.66666%
+  }
+  .col.xl12 {
+    width: 99.99999%
+  }
+}
+
+@media (min-width: $xl) {
+  .col.xxl1 {
+    width: 8.33333%
+  }
+  .col.xxl2 {
+    width: 16.66666%
+  }
+  .col.xxl3 {
+    width: 24.99999%
+  }
+  .col.xxl4 {
+    width: 33.33333%
+  }
+  .col.xxl5 {
+    width: 41.66666%
+  }
+  .col.xxl6 {
+    width: 49.99999%
+  }
+  .col.xxl7 {
+    width: 58.33333%
+  }
+  .col.xxl8 {
+    width: 66.66666%
+  }
+  .col.xxl9 {
+    width: 74.99999%
+  }
+  .col.xxl10 {
+    width: 83.33333%
+  }
+  .col.xxl11 {
+    width: 91.66666%
+  }
+  .col.xxl12 {
+    width: 99.99999%
+  }
+}
+
+.container,
+.panel {
+  padding: 0.01em 16px
+}
+.panel {
+  margin-top: 16px;
+  margin-bottom: 16px
+}

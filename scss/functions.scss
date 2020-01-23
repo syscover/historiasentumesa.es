@@ -1,0 +1,18 @@
+/* Media queries */
+@mixin bp($size){
+  @media screen and (min-width: $size) {
+    @content
+  }
+}
+
+@mixin bph($size){
+  @media screen and (min-height: $size) {
+    @content
+  }
+}
+
+@mixin bp-width-height($width, $height){
+  @media (min-width: $width) and (min-height: $height){
+    @content;
+  }
+}

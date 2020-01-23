@@ -1,0 +1,152 @@
+.video_container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  //height: 100%;
+  background: white;
+  z-index: 10001;
+  display: block;
+  height: 100%;
+  @include bp($sm){
+    display: flex;
+    flex-direction:column;
+    flex-direction:row;
+
+  }
+}
+
+.video_content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.video_poster{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/video_poster_desktop.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  z-index: 1;
+}
+.play_video_btn{
+  width: 49px;
+  height: 49px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin:-24.5px 0 0 -24.5px;
+  background-image: url(../img/play_icon.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include bp($xs){
+    width: 98px;
+    height: 98px;
+    margin:-49px 0 0 -49px;
+  }
+}
+.video_player{
+  iframe{
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+.close-video{
+  position: absolute;
+  font-size:14px;
+  letter-spacing: 2px;
+  top: 44px;
+  right: 15px;
+  z-index: 1;
+  @include bp($xs){
+    top:70px;
+    right:30px;
+  }
+}
+
+.changesubtitles-video{
+  position: absolute;
+  font-size:14px;
+  letter-spacing: 2px;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1;
+  color: #ffffff;
+  border: 2px solid #fff;
+  padding: 6px;
+  @include bp($xs){
+    bottom: 30px;
+    right: 30px;
+  }
+}
+
+$transition_duration: 1s;
+
+.video_blind{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform:translate(0,-100%);
+  z-index: 1;
+  background-color: black;
+  transition:transform $transition_duration linear;
+}
+
+.video_poster{
+  transition: visibility $transition_duration/2 linear;
+}
+
+.video_container{
+  &[data-status='stop']{
+
+  }
+  &[data-status='play']{
+    .video_blind{
+      transform:translate(0,100%);
+    }
+    .video_poster{
+      visibility: hidden;
+    }
+  }
+}
+
+
+.play_video_btn_lista{
+
+  position: absolute;
+  width: 60px;
+  height: 60px;
+
+  left: 50%;
+  top: 46%;
+
+  background-image: url(../img/play_icon.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transform: translate(-50%, -50%);
+
+  @include bp($xs){
+
+    width: 80px;
+    height: 80px;
+
+  }
+}
+
+.bt-video_lista{
+  position: relative;
+  display: block;
+}

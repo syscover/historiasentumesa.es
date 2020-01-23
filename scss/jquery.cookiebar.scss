@@ -1,0 +1,50 @@
+#cookie-bar {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  text-align: left;
+  padding: 15px 45px 15px 15px;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  font-family: $font-sans;
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 500;
+  @include bp($sm){
+    text-align: center;
+    padding: 15px 45px;
+  }
+}
+#cookie-bar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#cookie-bar p {
+  margin: 0;
+  padding: 0;
+}
+#cookie-bar a {
+  color: #000;
+  display: inline-block;
+  text-decoration: underline;
+  margin: 0 0 0 6px;
+}
+#cookie-bar .cb-enable {
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  overflow: hidden;
+  text-indent: -9999px;
+  background: url(../img/close-cookies.png);
+  opacity: 1;
+  z-index: 9999;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin-top: -16px;
+}
+

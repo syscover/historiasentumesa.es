@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"  />
+        <title>Denominación de Origen</title>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="css/style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Rubik:500" rel="stylesheet">
+    </head>
+    <body>
+        <div id="welcome">
+            <div class="welcome__center row-padding">
+                <div class="welcome__centered col s10 m8 l4">
+                    <a href="#" id="enter_link">
+                        <div class="welcome__first-txt">
+                            <img src="img/origen-logo-black.svg" alt="Logo Denominación de Origen" class="welcome__logo"/>
+                            <h1 class="welcome__title">historias en tu mesa</h1>
+                            <p class="welcome__txt">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante ipsum, fringilla commodo porttitor sit amet, bibendum ut tortor. Ut dapibus hendrerit ante.
+                            </p>
+                        </div>
+                        <div class="welcome__second-txt">
+                            <h1 class="welcome__title">- entrar -</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-bg-current" id="skrollr-body">
+            <div class="swiper-bg-next"></div>
+            <div class="swiper-container slider">
+                <div class="swiper-wrapper">
+                    <?php
+                    $product_headers = glob('products/headers'.'/*.*');
+                    $product_count = count($product_headers);
+
+                    for ($i = 0; $i <= count($product_headers); $i++) {
+                        $product_slug = str_replace(array('products/headers/', '.php'), '', $product_headers[$i]);
+                        include $product_headers[$i];
+                    }
+
+                    ?>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="swiper-container navigation">
+                <div class="swiper-wrapper">
+                    <?php
+                        for ($i = 0; $i <= count($product_headers)-1; $i++) {
+                            echo '<div class="swiper-slide" data-hash="'.str_replace(array('products/headers/', '.php'), '', $product_headers[$i]).'"><div class="dot"></div></div>';
+                        }
+                    ?>
+                </div>
+            </div>
+
+            <div id="product_content" class="col s10" style="min-height: 200vh;">
+                <div class="product_content__txt">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda at atque, consequatur dolores ipsa iure minima necessitatibus non perspiciatis recusandae, reiciendis saepe ullam. Doloremque eaque eum fugit magnam nostrum?</p>
+                </div>
+            </div>
+
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="node_modules/swiper/dist/js/swiper.jquery.js"></script>
+        <script src="js/skrollr.min.js"></script>
+        <script>
+            $(document).ready(function () {
+
+                $('#enter_link').on('click', function(e){
+                    e.preventDefault();
+                    $('#welcome').fadeOut(500);
+                });
+
+
+                var backgroundCurrent = $('.swiper-bg-current'),
+                    backgroundNext = $('.swiper-bg-next');
+
+                var navigation = new Swiper('.navigation', {
+                    centeredSlides: true,
+                    slideToClickedSlide: true,
+                    speed: 1000,
+                    runCallbacksOnInit: true,
+                    loop: true,
+                    loopedSlides: 11,
+                    //observer: true,
+                    slidesPerView: 'auto',
+                    //watchSlidesProgress: true,
+                    onSliderMove: function(swiper, event){
+                        //Cuando se empieza a arrastrar
+
+                        console.log('onSliderMove');
+                        var nextSlide = null,
+                            nextSlideBg = null,
+                            nextOpacity = (Math.abs(swiper.touches.diff) / $('.navigation .swiper-wrapper > .swiper-slide').width()).toFixed(3),
+                            currentSlide = null;
+
+                        console.log(nextOpacity % 1);
+
+                        if(swiper.swipeDirection === "next"){
+                            nextSlide = $('.slider .swiper-wrapper > .swiper-slide:nth-child('+(swiper.activeIndex+2+Math.trunc(nextOpacity))+')');
+                            nextSlideBg = nextSlide.attr('data-background-rgb');
+                            currentSlide = (swiper.activeIndex+1+Math.trunc(nextOpacity));
+                        }else{
+                            nextSlide = $('.slider .swiper-wrapper > .swiper-slide:nth-child('+((swiper.activeIndex)-Math.trunc(nextOpacity))+')');
+                            nextSlideBg = nextSlide.attr('data-background-rgb');
+                            currentSlide = (swiper.activeIndex+1-Math.trunc(nextOpacity));
+                        }
+                        backgroundCurrent.css({
+                            'background': 'rgb('+$('.slider .swiper-wrapper > .swiper-slide:nth-child('+currentSlide+')').attr('data-background-rgb')+')'
+                        });
+                        backgroundNext.css({
+                            'background': 'rgb('+nextSlideBg+')',
+                            'opacity': nextOpacity % 1
+                        });
+                        doParallax(swiper);
+                    }
+
+
+                });
+
+                //initialize swiper when document ready
+                var productsSlider = new Swiper ('.slider', {
+                    loop: true,
+                    loopedSlides: <?php echo $product_count;?>,
+                    slidesPerView: 1,
+                    centeredSlides: true,
+                    spaceBetween: $(window).width()/3.33,
+                    speed: 1000,
+                    effect: 'slide', //"slide", "fade", "cube", "coverflow" or "flip"
+                    virtualTranslate: false,
+                    parallax: false,
+                    grabCursor: true,
+                    uniqueNavElements: false,
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+                    a11y: true,
+                    prevSlideMessage: 'Ir al producto anterior',
+                    nextSlideMessage: 'Ir al siguiente producto',
+                    firstSlideMessage: 'Este es el primer producto',
+                    lastSlideMessage: 'Este es el último producto',
+                    paginationBulletMessage: 'Ir al producto {{index}}',
+                    runCallbacksOnInit: true,
+                    watchSlidesProgress: true,
+                    hashnav: true,
+                    hashnavWatchState: true,
+                    replaceState: true,
+                    observer: true,
+                    //history: 'productos',
+                    //pagination: '.swiper-pagination',
+                    //paginationType: 'bullets', //"bullets", "fraction", "progress" or "custom"
+                    //paginationClickable: true,
+                    onInit: function(swiper){
+                        var activeSlide = $('.swiper-wrapper > .swiper-slide:nth-child('+(swiper.activeIndex+1)+')'),
+                            activeSlideBg = activeSlide.attr('data-background-rgb');
+                        backgroundCurrent.css('background', 'rgb('+activeSlideBg+')');
+                        backgroundNext.css('opacity', 0);
+
+                        var title_difference = parseInt(($('.swiper-slide .inner').offset().top + parseInt($('.swiper-slide .inner').css('padding-top'))) - $('.swiper-slide .title_content').offset().top);
+                        var title_movement = 0;
+
+
+
+                        console.log(title_difference)
+
+                        var s = skrollr.init({
+                            render: function(data) {
+                                console.log(data.curTop);
+                                title_movement = parseInt(data.curTop + title_difference);
+                                if(data.curTop > title_difference && title_movement < 0){
+                                    $('.title_content .title').css({
+                                        'transform': 'translate(0,'+title_movement+'px)'
+                                    })
+                                }else{
+                                    $('.title_content .title').css({
+                                        'transform': 'translate(0,0px)'
+                                    })
+                                }
+
+
+                            },
+                            beforerender: function(data){
+
+                            },
+                            forceHeight: false,
+                            smoothScrolling: false,
+                            smoothScrollingDuration: 1,
+                            mobileCheck: function(){
+                                return (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera);
+                                //return true;
+                            },
+                            scale: 3
+                        });
+
+                    },
+                    onSlideChangeStart: function(swiper){
+                    },
+                    onTransitionStart: function(swiper){
+                        console.log('onTransitionStart');
+                        //console.log(swiper);
+                        if(swiper.activeIndex != swiper.previousIndex){
+                            console.log('Cambiando');
+                            var activeSlide = $('.swiper-wrapper > .swiper-slide:nth-child('+(swiper.activeIndex+1)+')'),
+                                activeSlideBg = activeSlide.attr('data-background-rgb');
+                            backgroundNext.css('background', 'rgb('+activeSlideBg+')');
+                            backgroundNext.animate({
+                                opacity: 1
+                            }, swiper.params.speed, function(){
+                                backgroundCurrent.css('background', 'rgb('+activeSlideBg+')');
+                                backgroundNext.css('opacity', 0);
+                            })
+                        }else{
+                            console.log('no ha habido cambio');
+                            var activeSlide = $('.swiper-wrapper > .swiper-slide:nth-child('+(swiper.activeIndex)+')'),
+                                activeSlideBg = activeSlide.attr('data-background-rgb');
+                            backgroundNext.animate({
+                                opacity: 0
+                            }, swiper.params.speed);
+                        }
+                        doParallaxAnimation(swiper);
+                    },
+                    onTransitionEnd: function(swiper){
+                        console.log('onTransitionEnd');
+                        backgroundNext.css('opacity', 0);
+
+
+
+                    },
+                    onTouchStart: function(swiper, event){
+                        //Cuando se empieza a arrastrar
+                    },
+                    onTouchMove: function(swiper, event){
+                        //Siempre que se arrastra
+                    },
+                    onSliderMove: function(swiper, event){
+                        //Cuando se empieza a arrastrar
+                        //console.log('onSliderMove');
+                        var nextSlide = null,
+                            nextSlideBg = null,
+                            nextOpacity = (Math.abs(swiper.touches.diff) / swiper.width).toFixed(3);
+                        if(swiper.swipeDirection === "next"){
+                            nextSlide = $('.swiper-wrapper > .swiper-slide:nth-child('+(swiper.activeIndex+2)+')');
+                        }else{
+                            nextSlide = $('.swiper-wrapper > .swiper-slide:nth-child('+(swiper.activeIndex)+')');
+                        }
+                        nextSlideBg = nextSlide.attr('data-background-rgb');
+                        backgroundNext.css({
+                            'background': 'rgb('+nextSlideBg+')',
+                            'opacity': nextOpacity
+                        });
+                        doParallax(swiper);
+                    },
+                    onSlideChangeEnd: function(swiper){
+                        console.log('onSlideChangeEnd');
+                    },
+                    onSetTransition: function(swiper, transition){
+                        console.log('onSetTransition');
+                    }
+                });
+
+                navigation.params.control = productsSlider;
+                productsSlider.params.control = navigation;
+
+                function doParallax(swiper){
+                    //console.log(swiper)
+                    //console.log(swiper.previousIndex)
+                    console.log('progress: ' + swiper.progress);
+                    console.log('translate: ' + swiper.translate);
+                    console.log('virtualSize: ' + swiper.virtualSize);
+                    //console.log(swiper.realIndex)
+                    //console.log(swiper.size) // Tamaño de cada slide
+                    //console.log(swiper.snapIndex)
+                    //console.log(swiper.swipeDirection);
+                    $('.swiper-slide .parallax').each(function(e){
+                        $(this).css({
+                            'transform': 'translate('+$(this).closest('.swiper-slide').offset().left * $(this).attr('data-parallax')+'px, 0px)'
+                        })
+                    });
+                }
+                function doParallaxAnimation(swiper){
+                    $('.swiper-slide .parallax').each(function(e){
+                        $(this).css({
+                            'text-indent': $(this).closest('.swiper-slide').offset().left * $(this).attr('data-parallax')
+                        });
+                        $(this).animate({
+                            textIndent: 0
+                        }, {
+                            step: function(now, fx){
+                                $(this).css({
+                                    'transform': 'translate('+now+'px, 0px)'
+                                })
+                            },
+                            duration: swiper.params.speed
+                        },'easeOutSine')
+                    });
+                }
+
+
+            });
+
+        </script>
+    </body>
+</html>

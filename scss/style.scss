@@ -1,0 +1,48 @@
+//Configuración
+@import "config";
+
+//Funciones
+@import "functions";
+
+//Estilos genéricos
+@import "normalize";
+@import "w3";
+
+@import "common";
+
+//Elementos html
+@import "elements";
+
+//Objetos
+@import "swiper";
+
+//Componentes
+@import "welcome";
+
+@import "products";
+
+@import "map";
+
+@import "video";
+
+@import "videos";
+
+@import "sellos";
+
+@import "loading";
+
+@import "jquery.cookiebar";
+
+html.skrollr-mobile,
+html.skrollr-mobile body{
+  width: 100%;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  position: fixed;
+  height: 100%;
+}
+#skrollr-body{
+  touch-action: none;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}

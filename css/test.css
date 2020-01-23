@@ -1,0 +1,2103 @@
+/* W3.CSS 4.04 Apr 2017 by Jan Egil and Borge Refsnes */
+/* line 3, ../scss/test.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 6, ../scss/test.scss */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+/* line 13, ../scss/test.scss */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 17, ../scss/test.scss */
+body {
+  margin: 0;
+}
+
+/* line 20, ../scss/test.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 34, ../scss/test.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/* line 40, ../scss/test.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/* line 43, ../scss/test.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 47, ../scss/test.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 51, ../scss/test.scss */
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+/* line 55, ../scss/test.scss */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* line 59, ../scss/test.scss */
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+/* line 64, ../scss/test.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 67, ../scss/test.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 71, ../scss/test.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 74, ../scss/test.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 81, ../scss/test.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 84, ../scss/test.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 87, ../scss/test.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 90, ../scss/test.scss */
+img {
+  border-style: none;
+}
+
+/* line 93, ../scss/test.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 96, ../scss/test.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 103, ../scss/test.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* line 108, ../scss/test.scss */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  margin: 0;
+}
+
+/* line 115, ../scss/test.scss */
+optgroup {
+  font-weight: 500;
+}
+
+/* line 118, ../scss/test.scss */
+button,
+input {
+  overflow: visible;
+}
+
+/* line 122, ../scss/test.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 126, ../scss/test.scss */
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/* line 132, ../scss/test.scss */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/* line 139, ../scss/test.scss */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/* line 145, ../scss/test.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 150, ../scss/test.scss */
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+/* line 157, ../scss/test.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 160, ../scss/test.scss */
+[type=checkbox],
+[type=radio] {
+  padding: 0;
+}
+
+/* line 164, ../scss/test.scss */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 168, ../scss/test.scss */
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+/* line 172, ../scss/test.scss */
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 176, ../scss/test.scss */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/* line 180, ../scss/test.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+/* End extract */
+/* line 186, ../scss/test.scss */
+html,
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* line 192, ../scss/test.scss */
+html {
+  overflow-x: hidden;
+}
+
+/* line 195, ../scss/test.scss */
+h1 {
+  font-size: 36px;
+}
+
+/* line 198, ../scss/test.scss */
+h2 {
+  font-size: 30px;
+}
+
+/* line 201, ../scss/test.scss */
+h3 {
+  font-size: 24px;
+}
+
+/* line 204, ../scss/test.scss */
+h4 {
+  font-size: 20px;
+}
+
+/* line 207, ../scss/test.scss */
+h5 {
+  font-size: 18px;
+}
+
+/* line 210, ../scss/test.scss */
+h6 {
+  font-size: 16px;
+}
+
+/* line 213, ../scss/test.scss */
+.w3-serif {
+  font-family: serif;
+}
+
+/* line 216, ../scss/test.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+/* line 226, ../scss/test.scss */
+.w3-wide {
+  letter-spacing: 4px;
+}
+
+/* line 229, ../scss/test.scss */
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
+/* line 234, ../scss/test.scss */
+.w3-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 238, ../scss/test.scss */
+img {
+  margin-bottom: -5px;
+}
+
+/* line 241, ../scss/test.scss */
+a {
+  color: inherit;
+}
+
+/* line 244, ../scss/test.scss */
+.w3-table,
+.w3-table-all {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+}
+
+/* line 251, ../scss/test.scss */
+.w3-table-all {
+  border: 1px solid #ccc;
+}
+
+/* line 254, ../scss/test.scss */
+.w3-bordered tr,
+.w3-table-all tr {
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 258, ../scss/test.scss */
+.w3-striped tbody tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+/* line 261, ../scss/test.scss */
+.w3-table-all tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+/* line 264, ../scss/test.scss */
+.w3-table-all tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+/* line 267, ../scss/test.scss */
+.w3-hoverable tbody tr:hover,
+.w3-ul.w3-hoverable li:hover {
+  background-color: #ccc;
+}
+
+/* line 271, ../scss/test.scss */
+.w3-centered tr th,
+.w3-centered tr td {
+  text-align: center;
+}
+
+/* line 275, ../scss/test.scss */
+.w3-table td,
+.w3-table th,
+.w3-table-all td,
+.w3-table-all th {
+  padding: 8px 8px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* line 284, ../scss/test.scss */
+.w3-table th:first-child,
+.w3-table td:first-child,
+.w3-table-all th:first-child,
+.w3-table-all td:first-child {
+  padding-left: 16px;
+}
+
+/* line 290, ../scss/test.scss */
+.w3-btn,
+.w3-button {
+  border: none;
+  display: inline-block;
+  outline: 0;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* line 305, ../scss/test.scss */
+.w3-btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 308, ../scss/test.scss */
+.w3-btn,
+.w3-button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 317, ../scss/test.scss */
+.w3-disabled,
+.w3-btn:disabled,
+.w3-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+/* line 323, ../scss/test.scss */
+.w3-disabled *,
+:disabled * {
+  pointer-events: none;
+}
+
+/* line 327, ../scss/test.scss */
+.w3-btn.w3-disabled:hover,
+.w3-btn:disabled:hover {
+  box-shadow: none;
+}
+
+/* line 331, ../scss/test.scss */
+.w3-badge,
+.w3-tag {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+
+/* line 340, ../scss/test.scss */
+.w3-badge {
+  border-radius: 50%;
+}
+
+/* line 343, ../scss/test.scss */
+.w3-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 348, ../scss/test.scss */
+.w3-ul li {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 352, ../scss/test.scss */
+.w3-ul li:last-child {
+  border-bottom: none;
+}
+
+/* line 355, ../scss/test.scss */
+.w3-tooltip,
+.w3-display-container {
+  position: relative;
+}
+
+/* line 359, ../scss/test.scss */
+.w3-tooltip .w3-text {
+  display: none;
+}
+
+/* line 362, ../scss/test.scss */
+.w3-tooltip:hover .w3-text {
+  display: inline-block;
+}
+
+/* line 365, ../scss/test.scss */
+.w3-ripple:active {
+  opacity: 0.5;
+}
+
+/* line 368, ../scss/test.scss */
+.w3-ripple {
+  transition: opacity 0s;
+}
+
+/* line 371, ../scss/test.scss */
+.w3-input {
+  padding: 8px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+/* line 378, ../scss/test.scss */
+.w3-select {
+  padding: 9px 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 384, ../scss/test.scss */
+.w3-dropdown-click,
+.w3-dropdown-hover {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* line 390, ../scss/test.scss */
+.w3-dropdown-hover:hover .w3-dropdown-content {
+  display: block;
+  z-index: 1;
+}
+
+/* line 394, ../scss/test.scss */
+.w3-dropdown-hover:first-child,
+.w3-dropdown-click:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* line 399, ../scss/test.scss */
+.w3-dropdown-hover:hover > .w3-button:first-child,
+.w3-dropdown-click:hover > .w3-button:first-child {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* line 404, ../scss/test.scss */
+.w3-dropdown-content {
+  cursor: auto;
+  color: #000;
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 414, ../scss/test.scss */
+.w3-check,
+.w3-radio {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 6px;
+}
+
+/* line 421, ../scss/test.scss */
+.w3-sidebar {
+  height: 100%;
+  width: 200px;
+  background-color: #fff;
+  position: fixed !important;
+  z-index: 1;
+  overflow: auto;
+}
+
+/* line 429, ../scss/test.scss */
+.w3-bar-block .w3-dropdown-hover,
+.w3-bar-block .w3-dropdown-click {
+  width: 100%;
+}
+
+/* line 433, ../scss/test.scss */
+.w3-bar-block .w3-dropdown-hover .w3-dropdown-content,
+.w3-bar-block .w3-dropdown-click .w3-dropdown-content {
+  min-width: 100%;
+}
+
+/* line 437, ../scss/test.scss */
+.w3-bar-block .w3-dropdown-hover .w3-button,
+.w3-bar-block .w3-dropdown-click .w3-button {
+  width: 100%;
+  text-align: left;
+  padding: 8px 16px;
+}
+
+/* line 443, ../scss/test.scss */
+.w3-main,
+#main {
+  transition: margin-left 0.4s;
+}
+
+/* line 447, ../scss/test.scss */
+.w3-modal {
+  z-index: 3;
+  display: none;
+  padding-top: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 460, ../scss/test.scss */
+.w3-modal-content {
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  width: 600px;
+}
+
+/* line 468, ../scss/test.scss */
+.w3-bar {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 472, ../scss/test.scss */
+.w3-center .w3-bar {
+  display: inline-block;
+  width: auto;
+}
+
+/* line 476, ../scss/test.scss */
+.w3-bar .w3-bar-item {
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  outline: none;
+  display: block;
+}
+
+/* line 484, ../scss/test.scss */
+.w3-bar .w3-dropdown-hover,
+.w3-bar .w3-dropdown-click {
+  position: static;
+  float: left;
+}
+
+/* line 489, ../scss/test.scss */
+.w3-bar .w3-button {
+  white-space: normal;
+}
+
+/* line 492, ../scss/test.scss */
+.w3-bar-block .w3-bar-item {
+  width: 100%;
+  display: block;
+  padding: 8px 16px;
+  text-align: left;
+  border: none;
+  outline: none;
+  white-space: normal;
+  float: none;
+}
+
+/* line 502, ../scss/test.scss */
+.w3-bar-block.w3-center .w3-bar-item {
+  text-align: center;
+}
+
+/* line 505, ../scss/test.scss */
+.w3-block {
+  display: block;
+  width: 100%;
+}
+
+/* line 509, ../scss/test.scss */
+.w3-responsive {
+  overflow-x: auto;
+}
+
+/* line 512, ../scss/test.scss */
+.w3-container:after,
+.w3-container:before,
+.w3-panel:after,
+.w3-panel:before,
+.w3-row:after,
+.w3-row:before,
+.w3-row-padding:after,
+.w3-row-padding:before,
+.w3-cell-row:before,
+.w3-cell-row:after,
+.w3-clear:after,
+.w3-clear:before,
+.w3-bar:before,
+.w3-bar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 530, ../scss/test.scss */
+.w3-col,
+.w3-half,
+.w3-third,
+.w3-twothird,
+.w3-threequarter,
+.w3-quarter {
+  float: left;
+  width: 100%;
+}
+
+/* line 539, ../scss/test.scss */
+.w3-col.s1 {
+  width: 8.33333%;
+}
+
+/* line 542, ../scss/test.scss */
+.w3-col.s2 {
+  width: 16.66666%;
+}
+
+/* line 545, ../scss/test.scss */
+.w3-col.s3 {
+  width: 24.99999%;
+}
+
+/* line 548, ../scss/test.scss */
+.w3-col.s4 {
+  width: 33.33333%;
+}
+
+/* line 551, ../scss/test.scss */
+.w3-col.s5 {
+  width: 41.66666%;
+}
+
+/* line 554, ../scss/test.scss */
+.w3-col.s6 {
+  width: 49.99999%;
+}
+
+/* line 557, ../scss/test.scss */
+.w3-col.s7 {
+  width: 58.33333%;
+}
+
+/* line 560, ../scss/test.scss */
+.w3-col.s8 {
+  width: 66.66666%;
+}
+
+/* line 563, ../scss/test.scss */
+.w3-col.s9 {
+  width: 74.99999%;
+}
+
+/* line 566, ../scss/test.scss */
+.w3-col.s10 {
+  width: 83.33333%;
+}
+
+/* line 569, ../scss/test.scss */
+.w3-col.s11 {
+  width: 91.66666%;
+}
+
+/* line 572, ../scss/test.scss */
+.w3-col.s12 {
+  width: 99.99999%;
+}
+
+@media (min-width: 601px) {
+  /* line 576, ../scss/test.scss */
+  .w3-col.m1 {
+    width: 8.33333%;
+  }
+
+  /* line 579, ../scss/test.scss */
+  .w3-col.m2 {
+    width: 16.66666%;
+  }
+
+  /* line 582, ../scss/test.scss */
+  .w3-col.m3,
+  .w3-quarter {
+    width: 24.99999%;
+  }
+
+  /* line 586, ../scss/test.scss */
+  .w3-col.m4,
+  .w3-third {
+    width: 33.33333%;
+  }
+
+  /* line 590, ../scss/test.scss */
+  .w3-col.m5 {
+    width: 41.66666%;
+  }
+
+  /* line 593, ../scss/test.scss */
+  .w3-col.m6,
+  .w3-half {
+    width: 49.99999%;
+  }
+
+  /* line 597, ../scss/test.scss */
+  .w3-col.m7 {
+    width: 58.33333%;
+  }
+
+  /* line 600, ../scss/test.scss */
+  .w3-col.m8,
+  .w3-twothird {
+    width: 66.66666%;
+  }
+
+  /* line 604, ../scss/test.scss */
+  .w3-col.m9,
+  .w3-threequarter {
+    width: 74.99999%;
+  }
+
+  /* line 608, ../scss/test.scss */
+  .w3-col.m10 {
+    width: 83.33333%;
+  }
+
+  /* line 611, ../scss/test.scss */
+  .w3-col.m11 {
+    width: 91.66666%;
+  }
+
+  /* line 614, ../scss/test.scss */
+  .w3-col.m12 {
+    width: 99.99999%;
+  }
+}
+@media (min-width: 993px) {
+  /* line 619, ../scss/test.scss */
+  .w3-col.l1 {
+    width: 8.33333%;
+  }
+
+  /* line 622, ../scss/test.scss */
+  .w3-col.l2 {
+    width: 16.66666%;
+  }
+
+  /* line 625, ../scss/test.scss */
+  .w3-col.l3 {
+    width: 24.99999%;
+  }
+
+  /* line 628, ../scss/test.scss */
+  .w3-col.l4 {
+    width: 33.33333%;
+  }
+
+  /* line 631, ../scss/test.scss */
+  .w3-col.l5 {
+    width: 41.66666%;
+  }
+
+  /* line 634, ../scss/test.scss */
+  .w3-col.l6 {
+    width: 49.99999%;
+  }
+
+  /* line 637, ../scss/test.scss */
+  .w3-col.l7 {
+    width: 58.33333%;
+  }
+
+  /* line 640, ../scss/test.scss */
+  .w3-col.l8 {
+    width: 66.66666%;
+  }
+
+  /* line 643, ../scss/test.scss */
+  .w3-col.l9 {
+    width: 74.99999%;
+  }
+
+  /* line 646, ../scss/test.scss */
+  .w3-col.l10 {
+    width: 83.33333%;
+  }
+
+  /* line 649, ../scss/test.scss */
+  .w3-col.l11 {
+    width: 91.66666%;
+  }
+
+  /* line 652, ../scss/test.scss */
+  .w3-col.l12 {
+    width: 99.99999%;
+  }
+}
+/* line 656, ../scss/test.scss */
+.w3-content {
+  max-width: 980px;
+  margin: auto;
+}
+
+/* line 660, ../scss/test.scss */
+.w3-rest {
+  overflow: hidden;
+}
+
+/* line 663, ../scss/test.scss */
+.w3-cell-row {
+  display: table;
+  width: 100%;
+}
+
+/* line 667, ../scss/test.scss */
+.w3-cell {
+  display: table-cell;
+}
+
+/* line 670, ../scss/test.scss */
+.w3-cell-top {
+  vertical-align: top;
+}
+
+/* line 673, ../scss/test.scss */
+.w3-cell-middle {
+  vertical-align: middle;
+}
+
+/* line 676, ../scss/test.scss */
+.w3-cell-bottom {
+  vertical-align: bottom;
+}
+
+/* line 679, ../scss/test.scss */
+.w3-hide {
+  display: none !important;
+}
+
+/* line 682, ../scss/test.scss */
+.w3-show-block,
+.w3-show {
+  display: block !important;
+}
+
+/* line 686, ../scss/test.scss */
+.w3-show-inline-block {
+  display: inline-block !important;
+}
+
+@media (max-width: 600px) {
+  /* line 690, ../scss/test.scss */
+  .w3-modal-content {
+    margin: 0 10px;
+    width: auto !important;
+  }
+
+  /* line 694, ../scss/test.scss */
+  .w3-modal {
+    padding-top: 30px;
+  }
+
+  /* line 697, ../scss/test.scss */
+  .w3-dropdown-hover.w3-mobile .w3-dropdown-content,
+  .w3-dropdown-click.w3-mobile .w3-dropdown-content {
+    position: relative;
+  }
+
+  /* line 701, ../scss/test.scss */
+  .w3-hide-small {
+    display: none !important;
+  }
+
+  /* line 704, ../scss/test.scss */
+  .w3-mobile {
+    display: block;
+    width: 100% !important;
+  }
+
+  /* line 708, ../scss/test.scss */
+  .w3-bar-item.w3-mobile,
+  .w3-dropdown-hover.w3-mobile,
+  .w3-dropdown-click.w3-mobile {
+    text-align: center;
+  }
+
+  /* line 713, ../scss/test.scss */
+  .w3-dropdown-hover.w3-mobile,
+  .w3-dropdown-hover.w3-mobile .w3-btn,
+  .w3-dropdown-hover.w3-mobile .w3-button,
+  .w3-dropdown-click.w3-mobile,
+  .w3-dropdown-click.w3-mobile .w3-btn,
+  .w3-dropdown-click.w3-mobile .w3-button {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  /* line 723, ../scss/test.scss */
+  .w3-modal-content {
+    width: 500px;
+  }
+
+  /* line 726, ../scss/test.scss */
+  .w3-modal {
+    padding-top: 50px;
+  }
+}
+@media (min-width: 993px) {
+  /* line 731, ../scss/test.scss */
+  .w3-modal-content {
+    width: 900px;
+  }
+
+  /* line 734, ../scss/test.scss */
+  .w3-hide-large {
+    display: none !important;
+  }
+
+  /* line 737, ../scss/test.scss */
+  .w3-sidebar.w3-collapse {
+    display: block !important;
+  }
+}
+@media (max-width: 992px) and (min-width: 601px) {
+  /* line 742, ../scss/test.scss */
+  .w3-hide-medium {
+    display: none !important;
+  }
+}
+@media (max-width: 992px) {
+  /* line 747, ../scss/test.scss */
+  .w3-sidebar.w3-collapse {
+    display: none;
+  }
+
+  /* line 750, ../scss/test.scss */
+  .w3-main {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+/* line 755, ../scss/test.scss */
+.w3-top,
+.w3-bottom {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+/* line 761, ../scss/test.scss */
+.w3-top {
+  top: 0;
+}
+
+/* line 764, ../scss/test.scss */
+.w3-bottom {
+  bottom: 0;
+}
+
+/* line 767, ../scss/test.scss */
+.w3-overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+/* line 779, ../scss/test.scss */
+.w3-display-topleft {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 784, ../scss/test.scss */
+.w3-display-topright {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 789, ../scss/test.scss */
+.w3-display-bottomleft {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/* line 794, ../scss/test.scss */
+.w3-display-bottomright {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 799, ../scss/test.scss */
+.w3-display-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* line 806, ../scss/test.scss */
+.w3-display-left {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+}
+
+/* line 813, ../scss/test.scss */
+.w3-display-right {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+}
+
+/* line 820, ../scss/test.scss */
+.w3-display-topmiddle {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+}
+
+/* line 827, ../scss/test.scss */
+.w3-display-bottommiddle {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+}
+
+/* line 834, ../scss/test.scss */
+.w3-display-container:hover .w3-display-hover {
+  display: block;
+}
+
+/* line 837, ../scss/test.scss */
+.w3-display-container:hover span.w3-display-hover {
+  display: inline-block;
+}
+
+/* line 840, ../scss/test.scss */
+.w3-display-hover {
+  display: none;
+}
+
+/* line 843, ../scss/test.scss */
+.w3-display-position {
+  position: absolute;
+}
+
+/* line 846, ../scss/test.scss */
+.w3-circle {
+  border-radius: 50%;
+}
+
+/* line 849, ../scss/test.scss */
+.w3-round-small {
+  border-radius: 2px;
+}
+
+/* line 852, ../scss/test.scss */
+.w3-round,
+.w3-round-medium {
+  border-radius: 4px;
+}
+
+/* line 856, ../scss/test.scss */
+.w3-round-large {
+  border-radius: 8px;
+}
+
+/* line 859, ../scss/test.scss */
+.w3-round-xlarge {
+  border-radius: 16px;
+}
+
+/* line 862, ../scss/test.scss */
+.w3-round-xxlarge {
+  border-radius: 32px;
+}
+
+/* line 865, ../scss/test.scss */
+.w3-row-padding,
+.w3-row-padding > .w3-half,
+.w3-row-padding > .w3-third,
+.w3-row-padding > .w3-twothird,
+.w3-row-padding > .w3-threequarter,
+.w3-row-padding > .w3-quarter,
+.w3-row-padding > .w3-col {
+  padding: 0 8px;
+}
+
+/* line 874, ../scss/test.scss */
+.w3-container,
+.w3-panel {
+  padding: 0.01em 16px;
+}
+
+/* line 878, ../scss/test.scss */
+.w3-panel {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* line 882, ../scss/test.scss */
+.w3-code,
+.w3-codespan {
+  font-family: Consolas, "courier new";
+  font-size: 16px;
+}
+
+/* line 887, ../scss/test.scss */
+.w3-code {
+  width: auto;
+  background-color: #fff;
+  padding: 8px 12px;
+  border-left: 4px solid #4CAF50;
+  word-wrap: break-word;
+}
+
+/* line 894, ../scss/test.scss */
+.w3-codespan {
+  color: crimson;
+  background-color: #f1f1f1;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 110%;
+}
+
+/* line 901, ../scss/test.scss */
+.w3-card,
+.w3-card-2 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* line 905, ../scss/test.scss */
+.w3-card-4,
+.w3-hover-shadow:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 909, ../scss/test.scss */
+.w3-spin {
+  animation: w3-spin 2s infinite linear;
+}
+
+@keyframes w3-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+/* line 920, ../scss/test.scss */
+.w3-animate-fading {
+  animation: fading 10s infinite;
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* line 934, ../scss/test.scss */
+.w3-animate-opacity {
+  animation: opac 0.8s;
+}
+
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* line 945, ../scss/test.scss */
+.w3-animate-top {
+  position: relative;
+  animation: animatetop 0.4s;
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+/* line 959, ../scss/test.scss */
+.w3-animate-left {
+  position: relative;
+  animation: animateleft 0.4s;
+}
+
+@keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+/* line 973, ../scss/test.scss */
+.w3-animate-right {
+  position: relative;
+  animation: animateright 0.4s;
+}
+
+@keyframes animateright {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+/* line 987, ../scss/test.scss */
+.w3-animate-bottom {
+  position: relative;
+  animation: animatebottom 0.4s;
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+/* line 1001, ../scss/test.scss */
+.w3-animate-zoom {
+  animation: animatezoom 0.6s;
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* line 1012, ../scss/test.scss */
+.w3-animate-input {
+  transition: width 0.4s ease-in-out;
+}
+
+/* line 1015, ../scss/test.scss */
+.w3-animate-input:focus {
+  width: 100% !important;
+}
+
+/* line 1018, ../scss/test.scss */
+.w3-opacity,
+.w3-hover-opacity:hover {
+  opacity: 0.6;
+}
+
+/* line 1022, ../scss/test.scss */
+.w3-opacity-off,
+.w3-hover-opacity-off:hover {
+  opacity: 1;
+}
+
+/* line 1026, ../scss/test.scss */
+.w3-opacity-max {
+  opacity: 0.25;
+}
+
+/* line 1029, ../scss/test.scss */
+.w3-opacity-min {
+  opacity: 0.75;
+}
+
+/* line 1032, ../scss/test.scss */
+.w3-greyscale-max,
+.w3-grayscale-max,
+.w3-hover-greyscale:hover,
+.w3-hover-grayscale:hover {
+  filter: grayscale(100%);
+}
+
+/* line 1038, ../scss/test.scss */
+.w3-greyscale,
+.w3-grayscale {
+  filter: grayscale(75%);
+}
+
+/* line 1042, ../scss/test.scss */
+.w3-greyscale-min,
+.w3-grayscale-min {
+  filter: grayscale(50%);
+}
+
+/* line 1046, ../scss/test.scss */
+.w3-sepia {
+  filter: sepia(75%);
+}
+
+/* line 1049, ../scss/test.scss */
+.w3-sepia-max,
+.w3-hover-sepia:hover {
+  filter: sepia(100%);
+}
+
+/* line 1053, ../scss/test.scss */
+.w3-sepia-min {
+  filter: sepia(50%);
+}
+
+/* line 1056, ../scss/test.scss */
+.w3-tiny {
+  font-size: 10px !important;
+}
+
+/* line 1059, ../scss/test.scss */
+.w3-small {
+  font-size: 12px !important;
+}
+
+/* line 1062, ../scss/test.scss */
+.w3-medium {
+  font-size: 15px !important;
+}
+
+/* line 1065, ../scss/test.scss */
+.w3-large {
+  font-size: 18px !important;
+}
+
+/* line 1068, ../scss/test.scss */
+.w3-xlarge {
+  font-size: 24px !important;
+}
+
+/* line 1071, ../scss/test.scss */
+.w3-xxlarge {
+  font-size: 36px !important;
+}
+
+/* line 1074, ../scss/test.scss */
+.w3-xxxlarge {
+  font-size: 48px !important;
+}
+
+/* line 1077, ../scss/test.scss */
+.w3-jumbo {
+  font-size: 64px !important;
+}
+
+/* line 1080, ../scss/test.scss */
+.w3-left-align {
+  text-align: left !important;
+}
+
+/* line 1083, ../scss/test.scss */
+.w3-right-align {
+  text-align: right !important;
+}
+
+/* line 1086, ../scss/test.scss */
+.w3-justify {
+  text-align: justify !important;
+}
+
+/* line 1089, ../scss/test.scss */
+.w3-center {
+  text-align: center !important;
+}
+
+/* line 1092, ../scss/test.scss */
+.w3-border-0 {
+  border: 0 !important;
+}
+
+/* line 1095, ../scss/test.scss */
+.w3-border {
+  border: 1px solid #ccc !important;
+}
+
+/* line 1098, ../scss/test.scss */
+.w3-border-top {
+  border-top: 1px solid #ccc !important;
+}
+
+/* line 1101, ../scss/test.scss */
+.w3-border-bottom {
+  border-bottom: 1px solid #ccc !important;
+}
+
+/* line 1104, ../scss/test.scss */
+.w3-border-left {
+  border-left: 1px solid #ccc !important;
+}
+
+/* line 1107, ../scss/test.scss */
+.w3-border-right {
+  border-right: 1px solid #ccc !important;
+}
+
+/* line 1110, ../scss/test.scss */
+.w3-topbar {
+  border-top: 6px solid #ccc !important;
+}
+
+/* line 1113, ../scss/test.scss */
+.w3-bottombar {
+  border-bottom: 6px solid #ccc !important;
+}
+
+/* line 1116, ../scss/test.scss */
+.w3-leftbar {
+  border-left: 6px solid #ccc !important;
+}
+
+/* line 1119, ../scss/test.scss */
+.w3-rightbar {
+  border-right: 6px solid #ccc !important;
+}
+
+/* line 1122, ../scss/test.scss */
+.w3-section,
+.w3-code {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+}
+
+/* line 1127, ../scss/test.scss */
+.w3-margin {
+  margin: 16px !important;
+}
+
+/* line 1130, ../scss/test.scss */
+.w3-margin-top {
+  margin-top: 16px !important;
+}
+
+/* line 1133, ../scss/test.scss */
+.w3-margin-bottom {
+  margin-bottom: 16px !important;
+}
+
+/* line 1136, ../scss/test.scss */
+.w3-margin-left {
+  margin-left: 16px !important;
+}
+
+/* line 1139, ../scss/test.scss */
+.w3-margin-right {
+  margin-right: 16px !important;
+}
+
+/* line 1142, ../scss/test.scss */
+.w3-padding-small {
+  padding: 4px 8px !important;
+}
+
+/* line 1145, ../scss/test.scss */
+.w3-padding {
+  padding: 8px 16px !important;
+}
+
+/* line 1148, ../scss/test.scss */
+.w3-padding-large {
+  padding: 12px 24px !important;
+}
+
+/* line 1151, ../scss/test.scss */
+.w3-padding-16 {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+
+/* line 1155, ../scss/test.scss */
+.w3-padding-24 {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+
+/* line 1159, ../scss/test.scss */
+.w3-padding-32 {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+
+/* line 1163, ../scss/test.scss */
+.w3-padding-48 {
+  padding-top: 48px !important;
+  padding-bottom: 48px !important;
+}
+
+/* line 1167, ../scss/test.scss */
+.w3-padding-64 {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+}
+
+/* line 1171, ../scss/test.scss */
+.w3-left {
+  float: left !important;
+}
+
+/* line 1174, ../scss/test.scss */
+.w3-right {
+  float: right !important;
+}
+
+/* line 1177, ../scss/test.scss */
+.w3-button:hover {
+  color: #000 !important;
+  background-color: #ccc !important;
+}
+
+/* line 1181, ../scss/test.scss */
+.w3-transparent,
+.w3-hover-none:hover {
+  background-color: transparent !important;
+}
+
+/* line 1185, ../scss/test.scss */
+.w3-hover-none:hover {
+  box-shadow: none !important;
+}
+
+/* Colors */
+/* line 1190, ../scss/test.scss */
+.w3-amber,
+.w3-hover-amber:hover {
+  color: #000 !important;
+  background-color: #ffc107 !important;
+}
+
+/* line 1195, ../scss/test.scss */
+.w3-aqua,
+.w3-hover-aqua:hover {
+  color: #000 !important;
+  background-color: #00ffff !important;
+}
+
+/* line 1200, ../scss/test.scss */
+.w3-blue,
+.w3-hover-blue:hover {
+  color: #fff !important;
+  background-color: #2196F3 !important;
+}
+
+/* line 1205, ../scss/test.scss */
+.w3-light-blue,
+.w3-hover-light-blue:hover {
+  color: #000 !important;
+  background-color: #87CEEB !important;
+}
+
+/* line 1210, ../scss/test.scss */
+.w3-brown,
+.w3-hover-brown:hover {
+  color: #fff !important;
+  background-color: #795548 !important;
+}
+
+/* line 1215, ../scss/test.scss */
+.w3-cyan,
+.w3-hover-cyan:hover {
+  color: #000 !important;
+  background-color: #00bcd4 !important;
+}
+
+/* line 1220, ../scss/test.scss */
+.w3-blue-grey,
+.w3-hover-blue-grey:hover,
+.w3-blue-gray,
+.w3-hover-blue-gray:hover {
+  color: #fff !important;
+  background-color: #607d8b !important;
+}
+
+/* line 1227, ../scss/test.scss */
+.w3-green,
+.w3-hover-green:hover {
+  color: #fff !important;
+  background-color: #4CAF50 !important;
+}
+
+/* line 1232, ../scss/test.scss */
+.w3-light-green,
+.w3-hover-light-green:hover {
+  color: #000 !important;
+  background-color: #8bc34a !important;
+}
+
+/* line 1237, ../scss/test.scss */
+.w3-indigo,
+.w3-hover-indigo:hover {
+  color: #fff !important;
+  background-color: #3f51b5 !important;
+}
+
+/* line 1242, ../scss/test.scss */
+.w3-khaki,
+.w3-hover-khaki:hover {
+  color: #000 !important;
+  background-color: #f0e68c !important;
+}
+
+/* line 1247, ../scss/test.scss */
+.w3-lime,
+.w3-hover-lime:hover {
+  color: #000 !important;
+  background-color: #cddc39 !important;
+}
+
+/* line 1252, ../scss/test.scss */
+.w3-orange,
+.w3-hover-orange:hover {
+  color: #000 !important;
+  background-color: #ff9800 !important;
+}
+
+/* line 1257, ../scss/test.scss */
+.w3-deep-orange,
+.w3-hover-deep-orange:hover {
+  color: #fff !important;
+  background-color: #ff5722 !important;
+}
+
+/* line 1262, ../scss/test.scss */
+.w3-pink,
+.w3-hover-pink:hover {
+  color: #fff !important;
+  background-color: #e91e63 !important;
+}
+
+/* line 1267, ../scss/test.scss */
+.w3-purple,
+.w3-hover-purple:hover {
+  color: #fff !important;
+  background-color: #9c27b0 !important;
+}
+
+/* line 1272, ../scss/test.scss */
+.w3-deep-purple,
+.w3-hover-deep-purple:hover {
+  color: #fff !important;
+  background-color: #673ab7 !important;
+}
+
+/* line 1277, ../scss/test.scss */
+.w3-red,
+.w3-hover-red:hover {
+  color: #fff !important;
+  background-color: #f44336 !important;
+}
+
+/* line 1282, ../scss/test.scss */
+.w3-sand,
+.w3-hover-sand:hover {
+  color: #000 !important;
+  background-color: #fdf5e6 !important;
+}
+
+/* line 1287, ../scss/test.scss */
+.w3-teal,
+.w3-hover-teal:hover {
+  color: #fff !important;
+  background-color: #009688 !important;
+}
+
+/* line 1292, ../scss/test.scss */
+.w3-yellow,
+.w3-hover-yellow:hover {
+  color: #000 !important;
+  background-color: #ffeb3b !important;
+}
+
+/* line 1297, ../scss/test.scss */
+.w3-white,
+.w3-hover-white:hover {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+/* line 1302, ../scss/test.scss */
+.w3-black,
+.w3-hover-black:hover {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+
+/* line 1307, ../scss/test.scss */
+.w3-grey,
+.w3-hover-grey:hover,
+.w3-gray,
+.w3-hover-gray:hover {
+  color: #000 !important;
+  background-color: #bbb !important;
+}
+
+/* line 1314, ../scss/test.scss */
+.w3-light-grey,
+.w3-hover-light-grey:hover,
+.w3-light-gray,
+.w3-hover-light-gray:hover {
+  color: #000 !important;
+  background-color: #f1f1f1 !important;
+}
+
+/* line 1321, ../scss/test.scss */
+.w3-dark-grey,
+.w3-hover-dark-grey:hover,
+.w3-dark-gray,
+.w3-hover-dark-gray:hover {
+  color: #fff !important;
+  background-color: #616161 !important;
+}
+
+/* line 1328, ../scss/test.scss */
+.w3-pale-red,
+.w3-hover-pale-red:hover {
+  color: #000 !important;
+  background-color: #ffdddd !important;
+}
+
+/* line 1333, ../scss/test.scss */
+.w3-pale-green,
+.w3-hover-pale-green:hover {
+  color: #000 !important;
+  background-color: #ddffdd !important;
+}
+
+/* line 1338, ../scss/test.scss */
+.w3-pale-yellow,
+.w3-hover-pale-yellow:hover {
+  color: #000 !important;
+  background-color: #ffffcc !important;
+}
+
+/* line 1343, ../scss/test.scss */
+.w3-pale-blue,
+.w3-hover-pale-blue:hover {
+  color: #000 !important;
+  background-color: #ddffff !important;
+}
+
+/* line 1348, ../scss/test.scss */
+.w3-text-red,
+.w3-hover-text-red:hover {
+  color: #f44336 !important;
+}
+
+/* line 1352, ../scss/test.scss */
+.w3-text-green,
+.w3-hover-text-green:hover {
+  color: #4CAF50 !important;
+}
+
+/* line 1356, ../scss/test.scss */
+.w3-text-blue,
+.w3-hover-text-blue:hover {
+  color: #2196F3 !important;
+}
+
+/* line 1360, ../scss/test.scss */
+.w3-text-yellow,
+.w3-hover-text-yellow:hover {
+  color: #ffeb3b !important;
+}
+
+/* line 1364, ../scss/test.scss */
+.w3-text-white,
+.w3-hover-text-white:hover {
+  color: #fff !important;
+}
+
+/* line 1368, ../scss/test.scss */
+.w3-text-black,
+.w3-hover-text-black:hover {
+  color: #000 !important;
+}
+
+/* line 1372, ../scss/test.scss */
+.w3-text-grey,
+.w3-hover-text-grey:hover,
+.w3-text-gray,
+.w3-hover-text-gray:hover {
+  color: #757575 !important;
+}
+
+/* line 1378, ../scss/test.scss */
+.w3-text-amber {
+  color: #ffc107 !important;
+}
+
+/* line 1381, ../scss/test.scss */
+.w3-text-aqua {
+  color: #00ffff !important;
+}
+
+/* line 1384, ../scss/test.scss */
+.w3-text-light-blue {
+  color: #87CEEB !important;
+}
+
+/* line 1387, ../scss/test.scss */
+.w3-text-brown {
+  color: #795548 !important;
+}
+
+/* line 1390, ../scss/test.scss */
+.w3-text-cyan {
+  color: #00bcd4 !important;
+}
+
+/* line 1393, ../scss/test.scss */
+.w3-text-blue-grey,
+.w3-text-blue-gray {
+  color: #607d8b !important;
+}
+
+/* line 1397, ../scss/test.scss */
+.w3-text-light-green {
+  color: #8bc34a !important;
+}
+
+/* line 1400, ../scss/test.scss */
+.w3-text-indigo {
+  color: #3f51b5 !important;
+}
+
+/* line 1403, ../scss/test.scss */
+.w3-text-khaki {
+  color: #b4aa50 !important;
+}
+
+/* line 1406, ../scss/test.scss */
+.w3-text-lime {
+  color: #cddc39 !important;
+}
+
+/* line 1409, ../scss/test.scss */
+.w3-text-orange {
+  color: #ff9800 !important;
+}
+
+/* line 1412, ../scss/test.scss */
+.w3-text-deep-orange {
+  color: #ff5722 !important;
+}
+
+/* line 1415, ../scss/test.scss */
+.w3-text-pink {
+  color: #e91e63 !important;
+}
+
+/* line 1418, ../scss/test.scss */
+.w3-text-purple {
+  color: #9c27b0 !important;
+}
+
+/* line 1421, ../scss/test.scss */
+.w3-text-deep-purple {
+  color: #673ab7 !important;
+}
+
+/* line 1424, ../scss/test.scss */
+.w3-text-sand {
+  color: #fdf5e6 !important;
+}
+
+/* line 1427, ../scss/test.scss */
+.w3-text-teal {
+  color: #009688 !important;
+}
+
+/* line 1430, ../scss/test.scss */
+.w3-text-light-grey,
+.w3-hover-text-light-grey:hover,
+.w3-text-light-gray,
+.w3-hover-text-light-gray:hover {
+  color: #f1f1f1 !important;
+}
+
+/* line 1436, ../scss/test.scss */
+.w3-text-dark-grey,
+.w3-hover-text-dark-grey:hover,
+.w3-text-dark-gray,
+.w3-hover-text-dark-gray:hover {
+  color: #3a3a3a !important;
+}
+
+/* line 1442, ../scss/test.scss */
+.w3-border-red,
+.w3-hover-border-red:hover {
+  border-color: #f44336 !important;
+}
+
+/* line 1446, ../scss/test.scss */
+.w3-border-green,
+.w3-hover-border-green:hover {
+  border-color: #4CAF50 !important;
+}
+
+/* line 1450, ../scss/test.scss */
+.w3-border-blue,
+.w3-hover-border-blue:hover {
+  border-color: #2196F3 !important;
+}
+
+/* line 1454, ../scss/test.scss */
+.w3-border-yellow,
+.w3-hover-border-yellow:hover {
+  border-color: #ffeb3b !important;
+}
+
+/* line 1458, ../scss/test.scss */
+.w3-border-white,
+.w3-hover-border-white:hover {
+  border-color: #fff !important;
+}
+
+/* line 1462, ../scss/test.scss */
+.w3-border-black,
+.w3-hover-border-black:hover {
+  border-color: #000 !important;
+}
+
+/* line 1466, ../scss/test.scss */
+.w3-border-grey,
+.w3-hover-border-grey:hover,
+.w3-border-gray,
+.w3-hover-border-gray:hover {
+  border-color: #bbb !important;
+}

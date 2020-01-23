@@ -1,0 +1,249 @@
+$desktop_map_step: 920px;
+
+.map_container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  //height: 100%;
+  background: white;
+  z-index: 10001;
+  display: block;
+  @include bp($desktop_map_step){
+    display: flex;
+    flex-direction:column;
+    flex-direction:row;
+
+  }
+  .aviso{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 9px;
+    text-align: center;
+    @include bp($desktop_map_step){
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      font-size: 11px;
+      text-align: left;
+    }
+  }
+  .intro{
+    background-image: url("/img/line.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    @include bp($desktop_map_step){
+      background-position: bottom right;
+    }
+  }
+
+  .text{
+    padding-bottom: 16px;
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 22px;
+    &.intro{
+      font-weight: 500;
+    }
+    &.footer{
+      font-size: 12px;
+      line-height: 14px;
+      @include bp($desktop_map_step){
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+    a{
+      text-decoration: underline;
+      font-weight: 500;
+    }
+  }
+  .footer{
+    margin: 40px 0 0 0;
+
+  }
+}
+.close-map{
+  position: absolute;
+  font-size:14px;
+  letter-spacing: 2px;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+  @include bp($desktop_map_step){
+    top: 0;
+    right: 0;
+    display: block;
+    text-align: right;
+    padding: 30px 50px 0 0;
+    width: 33.333%;
+    max-width: 440px;
+    background: white;
+    &:after{
+      content: "";
+      height: 30px;
+      display: block;
+      position: absolute;
+      width: 100%;
+      background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+      background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+      background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+    }
+  }
+}
+.map_list{
+  width: 100%;
+  order: 2;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include bp($desktop_map_step){
+    order: 0;
+    width: 33.333%;
+    max-width: 440px;
+    text-align: right;
+    padding-top: 80px;
+  }
+  ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    letter-spacing: 2px;
+  }
+  li{
+    font-size:11px;
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+  a{
+    color:#2b2a2a;
+    text-decoration: none;
+  }
+}
+.map_content{
+  width: 100%;
+  //height: 74vw;
+  height: 103.2vw;
+  max-height: 40vh;
+  position: relative;
+  background-color: #eef1f2;
+  //overflow: hidden;
+  z-index: 1;
+  &:after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    height: 30px;
+    width: 100%;
+    z-index: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+  }
+  &:before{
+    content: "";
+    position: fixed;
+    display: block;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  }
+  @include bp(520px){
+    max-height: 40vh;
+  }
+  @include bp($desktop_map_step){
+    flex: 1;
+    width: 70%;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    &:after,
+    &:before{
+      content:none;
+    }
+  }
+}
+.map_pointer{
+  position: relative;
+  transition: all .3s cubic-bezier(0.18, 0.89, 1, 1.8);
+  &.hover,
+  &:hover{
+    fill:white;
+    stroke: #c4b8b5;
+    stroke-width: 6px;
+    r: 7px;
+  }
+}
+.map_zoomable{
+  width: 100%;
+  height: auto;
+  transition: transform .3s ease;
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;*/
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include bp($desktop_map_step){
+    height: 100vh;
+  }
+}
+.map_img_zoom{
+  position: relative;
+}
+.map_img_content{
+  position: relative;
+  /*&:after,
+  &:before{
+    content:"";
+    position: absolute;
+  }
+  &:after{
+    top:50%;
+    height:1px;
+    left: 0;
+    right: 0;
+    background-color: red;
+    z-index: 99;
+  }
+  &:before{
+    top:0%;
+    width:1px;
+    left: 50%;
+    bottom: 0;
+    background-color: red;
+    z-index: 99;
+  }*/
+}
+#map_img{
+  position: relative;
+  display: block;
+  max-width: 100%;
+  max-height: 30vh;
+  transition: transform .5s ease;
+  margin: 5.75vh auto;
+  circle{
+    cursor:pointer;
+    r: 11px;
+    @include bp($desktop_map_step){
+      r: 5px;
+    }
+  }
+  @include bp($desktop_map_step){
+    max-height: 70vh;
+    margin: 0 auto;
+  }
+}

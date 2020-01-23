@@ -1,0 +1,86 @@
+.font-handwrite{
+  font-family: $font-handwrite;
+}
+.font-sans{
+  font-family: $font-sans;
+  font-weight:500;
+}
+.font-sans-light{
+  font-family: $font-sans-light;
+  font-weight:400;
+}
+.font-black{
+  font-family: $font-black;
+}
+
+.lateral-link{
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.list-inline{
+  li{
+    display: inline-block;
+  }
+}
+
+.hoverable-link{
+  position: relative;
+  padding: 0 10px;
+  &:after,
+  &:before{
+    content:"";
+    position: absolute;
+    top:50%;
+    margin-top:-1px;
+    width:4px;
+    height:2px;
+    background-color: #c4b8b5;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+  }
+  &:after{
+    right:0;
+  }
+  &:before{
+    left:0;
+  }
+  &:hover{
+    &:after,
+    &:before{
+      width: 100%;
+    }
+  }
+}
+
+.hoverable-link-2{
+  position: relative;
+  transition: all .3s ease-in-out;
+  &:after,
+  &:before{
+    content:"";
+    position: absolute;
+    top:50%;
+    margin-top:-1px;
+    width:0;
+    height:2px;
+    background-color: #c4b8b5;
+    transition: all .3s ease-in-out;
+  }
+  &:after{
+    right:0;
+  }
+  &:before{
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: -1;
+  }
+  &.hover,
+  &:hover{
+    padding: 0 10px;
+    &:before{
+      width: 100%;
+    }
+  }
+
+}

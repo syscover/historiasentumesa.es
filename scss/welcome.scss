@@ -1,0 +1,239 @@
+#welcome {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  //max-height: 100vh;
+  z-index: 99999;
+  background-image: url(../img/welcome-bg-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: white;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include bp($sm) {
+    background-position: center;
+    background-image: url(../img/welcome-bg-2.jpg);
+  }
+  @include bp($xl) {
+    background-image: url(../img/welcome-bg-2-big.jpg);
+  }
+}
+#skrollr-body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  body[data-section='products'] & {
+    position: relative;
+    z-index: 1;
+    height: auto;
+  }
+}
+.welcome__center {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  //background-color: rgba(243,243,243,.48);
+  padding: 70px 0 180px 0;
+  min-height: calc(100vh - 20vw);
+  @include bp($xs) {
+    padding: 0;
+    min-height: calc(100vh - 100px);
+  }
+}
+.welcome__centered {
+  min-height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  padding: 15px;
+  .welcome__first-txt {
+    opacity: 1;
+  }
+  .welcome__second-txt {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  @include bp($sm) {
+    flex: 1;
+    padding: 30px;
+  }
+}
+.welcome__stamps-list {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  li {
+    flex: 1;
+    margin: 0 10px;
+    img {
+      display: inline-block;
+      width: 66px;
+    }
+  }
+  .dop {
+    text-align: right;
+  }
+  .igp {
+    text-align: left;
+  }
+  .desc {
+    font-size: 11px;
+    line-height: 14px;
+    color: #7a7a78;
+    margin: 8px auto 0;
+  }
+  @include bp($xs) {
+    margin-top: 40px;
+    li {
+      img {
+        width: 85px;
+      }
+    }
+  }
+}
+.welcome__title {
+  font-size: 50px;
+  margin: 15px auto;
+  text-align: center;
+  span {
+    &:nth-child(1) {
+      margin-left: -1.2em;
+      //display: block;
+    }
+    &:nth-child(3) {
+      margin: 0 0 0 0.2em;
+    }
+  }
+  @include bp($xs) {
+    font-size: 64px;
+    margin: 30px auto;
+  }
+}
+.welcome__txt {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+#footer__welcome{
+  box-shadow: 0px -5px 20px rgba(0,0,0,.05);
+}
+.footer {
+  position: relative;
+  z-index: 9999;
+  .footer__inner_flex {
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    padding: 0 5.6vw;
+    //max-height: 20vw;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+  .center {
+    padding: 20px 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+  .right {
+    display: flex;
+    //flex-direction: column;
+    justify-content: flex-end;
+  }
+  .eu-logo-container {
+    padding: 0 0 0;
+    width: 139px;
+    //margin-bottom: 44px;
+    @include bp($xs){
+      margin-bottom: 0;
+    }
+  }
+  .eu-logo-txt {
+    text-align: right;
+    margin: 10px 0 0 0;
+    font-size: 10px;
+    line-height: 11px;
+    //position: absolute;
+    //left: 85px;
+    //top: 58px;
+    //width: 144px;
+    @include bp($xs) {
+      //width: 50%;
+      margin: auto 10px;
+      position: inherit;
+      font-size: 10px;
+    }
+    p{
+      margin: 0;
+      line-height: 11px;
+    }
+  }
+  .origen-logo-container {
+    padding: 20px 20px 15px 0;
+    width: 68px;
+  }
+  .enjoy-logo-container {
+    padding-top: 20px;
+    width: 70px;
+    max-width: 76px;
+  }
+  @include bp(700px){
+    .center{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  @include bp($sm){
+    .footer__inner_flex{
+      padding: 0 50px;
+    }
+    .origen-logo-container{
+      order: -1;
+      width: 61px;
+      padding: 15px 20px 15px 0;
+    }
+    .eu-logo-container{
+      width: 166px;
+    }
+    .enjoy-logo-container{
+      width: 58px;
+      padding-top: 10px;
+    }
+    .center{
+      padding: 10px 20px 10px 0;
+    }
+  }
+}
+
+#enter_link{
+  .welcome__second-txt{
+    transform:scale(1);
+    transition:transform .3s ease;
+  }
+  &:hover{
+    .welcome__second-txt{
+      transform:scale(1.1);
+    }
+  }
+}
