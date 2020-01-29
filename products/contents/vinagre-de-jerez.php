@@ -27,7 +27,7 @@
         <div id="video_product">
             <div class="video_content_product">
                 <div class="video_poster_product" style="background-image: url('/img/products/vinagre-de-jerez/video_poster.jpg');">
-                    <a href="#" id="play_video_btn_product" class="play_video_btn" onclick="javascript:trackEvent('send', 'event', 'Botón play vídeo', 'Reproducir', 'Vídeo vinagre-de-jerez');"></a>
+                    <a href="#" class="play_video_btn" onclick="javascript:trackEvent('send', 'event', 'Botón play vídeo', 'Reproducir', 'Vídeo vinagre-de-jerez');"></a>
                 </div>
                 <div class="video_player_products">
                     <div id="spot-product"></div>
@@ -43,27 +43,7 @@
 </div>
 
 <script>
-
-    var playerProduct = new YT.Player('spot-product', {
-        width: '320',
-        height: '240',
-        videoId: 'qkRi9pSQPCQ',
-        playerVars: {
-            'autoplay': 0,
-            'controls': 1,
-            'rel': 0,
-            'vq': 'hd720',
-            'html5': 1,
-            'autohide': 1,
-            'showinfo': 0,
-            'modestbranding': 1,
-            'playerVars': {rel: 0}
-        }
-    });
-
-    $('#play_video_btn_product').on('click', function (e) {
-        e.preventDefault();
-        playerProduct.playVideo();
-        $('.video_poster_product').animate({opacity:0}, 500, function(){$('.video_poster_product').css('display','none')});
-    });
+    var videoId1 = 'qkRi9pSQPCQ';
+    var videoId2 = 'T-38y910Z2E';
 </script>
+<script src="js/historias.js"></script>

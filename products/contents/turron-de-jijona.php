@@ -22,8 +22,28 @@
                 <p class="font-sans">Una perfecta mezcla de ingredientes naturales de gran calidad, que dan como resultado unos turrones excepcionales.</p>
             </div>
         </div>
+
+
+        <div id="video_product">
+            <div class="video_content_product">
+                <div class="video_poster_product" style="background-image: url('/img/products/turron-de-jijona/video_poster.jpg');">
+                    <a href="#" class="play_video_btn" onclick="javascript:trackEvent('send', 'event', 'Botón play vídeo', 'Reproducir', 'Vídeo turron-de-jijona');"></a>
+                </div>
+                <div class="video_player_products">
+                    <div id="spot-product"></div>
+                </div>
+            </div>
+        </div>
+
+
         <div class="link-txt font-black">
             <a href="http://www.jijona.com" class="hoverable-link-2" target="_blank">www.jijona.com</a>
         </div>
     </div>
 </div>
+
+<script>
+    var videoId1 = 'gxjTLL-21Ck';
+    var videoId2 = 'e9P-nzTPkwc';
+</script>
+<script src="js/historias.js"></script>

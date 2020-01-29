@@ -22,8 +22,28 @@
                 <p class="font-sans">El microclima especial de la zona dota a esta fruta de unas características especiales, ya que se cultivan en un clima típicamente mediterráneo (La Rioja) pero en el límite con climas atlánticos y de montaña, lo que les aporta sus características excepcionales.</p>
             </div>
         </div>
+
+
+        <div id="video_product">
+            <div class="video_content_product">
+                <div class="video_poster_product" style="background-image: url('/img/products/peras-de-rincon-de-soto/video_poster.jpg');">
+                    <a href="#" class="play_video_btn" onclick="javascript:trackEvent('send', 'event', 'Botón play vídeo', 'Reproducir', 'Vídeo peras-de-rincon-de-soto');"></a>
+                </div>
+                <div class="video_player_products">
+                    <div id="spot-product"></div>
+                </div>
+            </div>
+        </div>
+
+
         <div class="link-txt font-black">
             <a href="http://www.perasderincondesoto.com/" class="hoverable-link-2" target="_blank">www.perasderincondesoto.com</a>
         </div>
     </div>
 </div>
+
+<script>
+    var videoId1 = 'GcAwN6ZpqJ4';
+    var videoId2 = '5Y8l8j5XF-c';
+</script>
+<script src="js/historias.js"></script>

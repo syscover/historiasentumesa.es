@@ -441,64 +441,64 @@
                 <div class="intro text font-sans-light">Algunas DOP e IGP agroalimentarias del panorama nacional son las siguientes:</div>
                 <ul>
                     <li data-product="carne-de-avila">
-                        <a class="hoverable-link-2 closeAndGoTo" href="carne-de-avila" data-video="z0ztXnl_jT8">IGP Carne de Ávila </a>
+                        <a class="hoverable-link-2 closeAndGoTo" href="#carne-de-avila" data-video="z0ztXnl_jT8" data-newvideo="64SL08WjD9w">IGP Carne de Ávila </a>
                     </li>
                     <li data-product="citricos-valencianos">
-                        <a class="hoverable-link-2 closeAndGoTo" href="citricos-valencianos" data-video="1YrWHkR05qg">IGP Cítricos Valencianos </a>
+                        <a class="hoverable-link-2 closeAndGoTo" href="#citricos-valencianos" data-video="1YrWHkR05qg" data-newvideo="zMDF5zkoHP4">IGP Cítricos Valencianos </a>
                     </li>
                     <li data-product="jabugo">
-                        <a class="hoverable-link-2 closeAndGoTo" href="jabugo" data-video="tqfQx5Y8ImA">DOP Jabugo</a>
+                        <a class="hoverable-link-2 closeAndGoTo" href="#jabugo" data-video="tqfQx5Y8ImA" data-newvideo="YXlvoKkdnMo">DOP Jabugo</a>
                     </li>
                     <li data-product="turron-de-jijona">
-                        <a class="hoverable-link-2 closeAndGoTo" href="turron-de-jijona" data-video="gxjTLL-21Ck">IGP Jijona y Turrón de Alicante</a>
+                        <a class="hoverable-link-2 closeAndGoTo" href="#turron-de-jijona" data-video="gxjTLL-21Ck" data-newvideo="e9P-nzTPkwc">IGP Jijona y Turrón de Alicante</a>
                     </li>
                     <li data-product="los-pedroches">
-                        <a class="hoverable-link-2 closeAndGoTo" href="los-pedroches" data-video="dZ9NUrWQ0Xc">DOP Los Pedroches</a>
+                        <a class="hoverable-link-2 closeAndGoTo" href="#los-pedroches" data-video="dZ9NUrWQ0Xc" data-newvideo="pgmOEt0gFrs">DOP Los Pedroches</a>
                     </li>
                     <li data-product="queso-de-mahon">
-                        <a class="hoverable-link-2 closeAndGoTo" href="queso-de-mahon" data-video="W3SCJfRxiQ8">DOP Queso Mahón-Menorca</a>
+                        <a class="hoverable-link-2 closeAndGoTo" href="#queso-de-mahon" data-video="W3SCJfRxiQ8" data-newvideo="SaAjdUqOKnE">DOP Queso Mahón-Menorca</a>
                     </li>
                     <li data-product="peras-de-rincon-de-soto">
-                        <a class="hoverable-link-2 closeAndGoTo" href="peras-de-rincon-de-soto" data-video="GcAwN6ZpqJ4">DOP Peras de Rincón de Soto</a>
+                        <a class="hoverable-link-2 closeAndGoTo" href="#peras-de-rincon-de-soto" data-video="GcAwN6ZpqJ4" data-newvideo="5Y8l8j5XF-c">DOP Peras de Rincón de Soto</a>
                     </li>
                     <li data-product="pimenton-de-la-vera">
-                        <a class="hoverable-link-2 closeAndGoTo" href="pimenton-de-la-vera" data-video="bkI5K7R3Tgo">DOP Pimentón de la vera</a>
+                        <a class="hoverable-link-2 closeAndGoTo" href="#pimenton-de-la-vera" data-video="bkI5K7R3Tgo" data-newvideo="5CI21qilUG8">DOP Pimentón de la Vera</a>
                     </li>
                     <li data-product="platano-de-canarias">
-                        <a class="hoverable-link-2 closeAndGoTo" href="platano-de-canarias" data-video="hezJ481orgQ">IGP Plátano de Canarias</a>
+                        <a class="hoverable-link-2 closeAndGoTo" href="#platano-de-canarias" data-video="hezJ481orgQ" data-newvideo="Uq-AbqgSMqY">IGP Plátano de Canarias</a>
                     </li>
                     <li data-product="priego-de-cordoba">
-                        <a class="hoverable-link-2 closeAndGoTo" href="priego-de-cordoba" data-video="Crt-6vugZVE">DOP Priego de Córdoba</a>
+                        <a class="hoverable-link-2 closeAndGoTo" href="#priego-de-cordoba" data-video="Crt-6vugZVE" data-newvideo="1cUbPYsKQkU">DOP Priego de Córdoba</a>
                     </li>
                     <li data-product="queso-cabrales">
-                        <a class="hoverable-link-2 closeAndGoTo" href="queso-cabrales" data-video="keWwTnTQwmU">DOP Queso Cabrales</a>
+                        <a class="hoverable-link-2 closeAndGoTo" href="#queso-cabrales" data-video="keWwTnTQwmU" data-newvideo="pxte5Uq5cow">DOP Queso Cabrales</a>
                     </li>
                     <li data-product="queso-manchego">
-                        <a class="hoverable-link-2 closeAndGoTo" href="queso-manchego" data-video="prF4RGHB6Hc">DOP Queso Manchego</a>
+                        <a class="hoverable-link-2 closeAndGoTo" href="#queso-manchego" data-video="prF4RGHB6Hc" data-newvideo="A7kxJlIElRc">DOP Queso Manchego</a>
                     </li>
                     <li data-product="aceite-de-magina">
-                        <a class="hoverable-link-2 closeAndGoTo" href="aceite-de-magina" data-video="nOKYVe4I6Z8">DOP Sierra Mágina</a>
+                        <a class="hoverable-link-2 closeAndGoTo" href="#aceite-de-magina" data-video="nOKYVe4I6Z8" data-newvideo="panMFAbvcVI">DOP Sierra Mágina</a>
                     </li>
                     <li data-product="sobrasada-de-mallorca">
-                        <a class="hoverable-link-2 closeAndGoTo" href="sobrasada-de-mallorca" data-video="wZu6jrfFiJY">IGP Sobrasada de Mallorca</a>
+                        <a class="hoverable-link-2 closeAndGoTo" href="#sobrasada-de-mallorca" data-video="wZu6jrfFiJY" data-newvideo="ndmQTf8VCvs">IGP Sobrasada de Mallorca</a>
                     </li>
                     <li data-product="ternera-de-extremadura">
-                        <a class="hoverable-link-2 closeAndGoTo" href="ternera-de-extremadura" data-video="wb268sJIZ-A">IGP Ternera de Extremadura</a>
+                        <a class="hoverable-link-2 closeAndGoTo" href="#ternera-de-extremadura" data-video="wb268sJIZ-A" data-newvideo="0jMrBVcXJe0">IGP Ternera de Extremadura</a>
                     </li>
                     <li data-product="ternera-de-navarra">
-                        <a class="hoverable-link-2 closeAndGoTo" href="ternera-de-navarra" data-video="p6RwvgMAk9Q">IGP Ternera de Navarra</a>
+                        <a class="hoverable-link-2 closeAndGoTo" href="#ternera-de-navarra" data-video="p6RwvgMAk9Q" data-newvideo="GWgVNpHuik4">IGP Ternera de Navarra</a>
                     </li>
                     <li data-product="ternera-gallega">
-                        <a class="hoverable-link-2 closeAndGoTo" href="ternera-gallega" data-video="YBvIrvkuH3U">IGP Ternera Gallega </a>
+                        <a class="hoverable-link-2 closeAndGoTo" href="#ternera-gallega" data-video="YBvIrvkuH3U" data-newvideo="gMR9oAiRJTo">IGP Ternera Gallega</a>
                     </li>
                     <li data-product="torta-del-casar">
-                        <a class="hoverable-link-2 closeAndGoTo" href="torta-del-casar" data-video="iPgG_cjht0A">DOP Torta del Casar</a>
+                        <a class="hoverable-link-2 closeAndGoTo" href="#torta-del-casar" data-video="iPgG_cjht0A" data-newvideo="9x2jn298k2U">DOP Torta del Casar</a>
                     </li>
                     <li data-product="uva-vinalopo">
-                        <a class="hoverable-link-2 closeAndGoTo" href="uva-vinalopo" data-video="BI6WePGt-8o">DOP Uva de Mesa Embolsada del Vinalopó</a>
+                        <a class="hoverable-link-2 closeAndGoTo" href="#uva-vinalopo" data-video="BI6WePGt-8o" data-newvideo="7g2orb23GeY">DOP Uva de Mesa Embolsada del Vinalopó</a>
                     </li>
                     <li data-product="vinagre-de-jerez">
-                        <a class="hoverable-link-2 closeAndGoTo" href="vinagre-de-jerez" data-video="qkRi9pSQPCQ">DOP Vinagre de Jerez</a>
+                        <a class="hoverable-link-2 closeAndGoTo" href="#vinagre-de-jerez" data-video="qkRi9pSQPCQ" data-newvideo="T-38y910Z2E">DOP Vinagre de Jerez</a>
                     </li>
                 </ul>
                 <div class="footer text font-sans-light"><a href="http://ec.europa.eu/agriculture/quality/door/list.html?locale=es" target="_blank">Más información</a> de productos con sellos DOP e IGP en Europa.</div>
@@ -894,7 +894,7 @@
 
                 $('.closeAndGoTo').on('click', function (e) {
                     e.preventDefault();
-                    closeAndGoTo($(this).attr('href'));
+                    closeAndGoTo($(this).attr('href').replace('#', ''));
                 });
 
 
@@ -1039,8 +1039,30 @@
                     cerrarTodo();
                 });
 
+                // Vídeos nuevos
                 $('.map_list ul li').each(function(){
-                    $('.videos__container .lista').append('<div class="col s12 m4"><a href="" class="bt-video_lista" data-video="' + $(this).find('a').attr('data-video') + '"><div class="play_video_btn_lista"></div><img src="/img/products/' + $(this).find('a').attr('href') + '/video_poster.jpg" width="100%" height="auto" /><br><p class="nombre">' + $(this).find('a').html() + '</p></a></div>');
+                    $('.videos__container .lista').append(
+                        '<div class="col s12 m4">' +
+                        '<a href="" class="bt-video_lista" data-video="' + $(this).find('a').attr('data-newvideo') + '">' +
+                        '<div class="play_video_btn_lista"></div>' +
+                        '<img src="/img/products/' + $(this).find('a').attr('href').replace('#', '') + '/maxresdefault.jpg" width="100%" height="auto" /><br>' +
+                        '<p class="nombre">' + $(this).find('a').html() + '</p>' +
+                        '</a>' +
+                        '</div>'
+                    );
+                });
+
+                // Vídeos anteriores
+                $('.map_list ul li').each(function(){
+                    $('.videos__container .lista').append(
+                        '<div class="col s12 m4">' +
+                            '<a href="" class="bt-video_lista" data-video="' + $(this).find('a').attr('data-video') + '">' +
+                                '<div class="play_video_btn_lista"></div>' +
+                                '<img src="/img/products/' + $(this).find('a').attr('href').replace('#', '') + '/video_poster.jpg" width="100%" height="auto" /><br>' +
+                                '<p class="nombre">' + $(this).find('a').html() + '</p>' +
+                            '</a>' +
+                        '</div>'
+                    );
                 });
 
                 var player = null;
