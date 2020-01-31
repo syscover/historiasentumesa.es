@@ -20,7 +20,7 @@ Homestead.json
 /database/migrations/*
 !/database/migrations/
 /database/seeds/*
-!/database/seeds/
+!/database/seeds/.gitkeep
 /node_modules
 /public/hot
 /storage/*.key
