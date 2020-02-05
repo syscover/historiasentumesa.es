@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
-
+use \Quasar\Cms\Support\Publisher;
 
 class WebController extends Controller
 {
@@ -42,6 +42,8 @@ class WebController extends Controller
 
     public function product(Request $request, $slug)
     { 
-        return view('products.contents.' . $slug);
+        $article = Publisher::article($slug);
+
+        return view('products.contents.' . $slug, ['article' => $article]);
     }
 }

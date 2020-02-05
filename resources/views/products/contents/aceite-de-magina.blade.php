@@ -1,6 +1,6 @@
 <div class="product_content__txt">
     <div class="col s10 m8 xl8 xxl7 product_content__intro-txt">
-        <p>Se trata de un aceite virgen extra de variedad picual, procedente de olivar de sierra, con un intenso aroma afrutado que recuerda a la hierba fresca recién cortada y a la tomatera, muy equilibrado en su sabor, con un toque amargo y picante.</p>
+        <p>{{ $article->headerTxt }}</p>
     </div>
     <div class="sellos-container">
         <img src="{{ asset('img/sello-denominacion.svg') }}" alt="Denominación de Origen Protegida"/>
@@ -24,7 +24,6 @@
         </div>
 
 
-
         <div id="video_product">
             <div class="video_content_product">
                 <div class="video_poster_product" style="background-image: url('/img/products/aceite-de-magina/video_poster.jpg');">
@@ -35,7 +34,6 @@
                 </div>
             </div>
         </div>
-
 
 
         <div class="link-txt font-black">

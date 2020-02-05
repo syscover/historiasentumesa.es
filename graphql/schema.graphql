@@ -1,0 +1,34 @@
+# Core
+#import ./../vendor/quasar/core/src/Quasar/Core/GraphQL/enums.graphql
+#import ./../vendor/quasar/core/src/Quasar/Core/GraphQL/scalars.graphql
+#import ./../vendor/quasar/core/src/Quasar/Core/GraphQL/inputs.graphql
+#import ./../vendor/quasar/core/src/Quasar/Core/GraphQL/types.graphql
+
+# Admin
+#import ./../vendor/quasar/admin/src/Quasar/Admin/GraphQL/inputs.graphql
+#import ./../vendor/quasar/admin/src/Quasar/Admin/GraphQL/types.graphql
+
+# Cms
+#import ./../vendor/quasar/cms/src/Quasar/Cms/GraphQL/inputs.graphql
+#import ./../vendor/quasar/cms/src/Quasar/Cms/GraphQL/types.graphql
+
+type Query 
+{
+    # Core
+    #import ./../vendor/quasar/core/src/Quasar/Core/GraphQL/queries.graphql
+
+    # Admin
+    #import ./../vendor/quasar/admin/src/Quasar/Admin/GraphQL/queries.graphql
+
+    # Cms
+    #import ./../vendor/quasar/cms/src/Quasar/Cms/GraphQL/queries.graphql
+}
+
+type Mutation 
+{
+    # Admin
+    #import ./../vendor/quasar/admin/src/Quasar/Admin/GraphQL/mutations.graphql
+
+    # Cms
+    #import ./../vendor/quasar/cms/src/Quasar/Cms/GraphQL/mutations.graphql
+}

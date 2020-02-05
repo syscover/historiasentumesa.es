@@ -24,8 +24,6 @@
         </div>
 
 
-
-
         <div id="video_product">
             <div class="video_content_product">
                 <div class="video_poster_product" style="background-image: url('/img/products/ternera-de-extremadura/video_poster.jpg');">
@@ -36,7 +34,6 @@
                 </div>
             </div>
         </div>
-
 
 
         <div class="link-txt font-black">
