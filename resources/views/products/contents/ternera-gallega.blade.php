@@ -1,6 +1,6 @@
 <div class="product_content__txt">
     <div class="col s10 m8 xl8 xxl7 product_content__intro-txt">
-        <p>Es una carne fresca de terneros nacidos y criados en Galicia, que proceden de razas autóctonas y sus cruces, y que superaron un riguroso programa de control integral.</p>
+        <p>{{ $article->headerTxt }}</p>
     </div>
     <div class="sellos-container">
         <img src="../../img/sello-indicacion.svg" alt="Indicación de Origen Protegida"/>
@@ -16,10 +16,10 @@
         </div>
         <div class="row">
             <div class="col col-padding s12 m6">
-                <p class="font-sans-light">Galicia siempre se ha distinguido por la producción de carne de vacuno de calidad. Las condiciones orográficas y climáticas hacen de esta tierra una de las mejores zonas de Europa para el desarrollo de la especie bovina.</p>
+                {!! $article->leftText !!}
             </div>
             <div class="col col-padding s12 m6">
-                <p class="font-sans">Las razas y aptitudes del ganado, así como los sistemas de explotación tradicionales y los cultivos, han dado lugar a un modo común y peculiar de entender la producción de carne de calidad.</p>
+                {!! $article->rightText !!}
             </div>
         </div>
 
@@ -37,13 +37,13 @@
 
 
         <div class="link-txt font-black">
-            <a href="http://www.terneragallega.com" class="hoverable-link-2" target="_blank">www.terneragallega.com</a>
+            <a href="{{ $article->link }}" class="hoverable-link-2" target="_blank">{{ $article->textLink }}</a>
         </div>
     </div>
 </div>
 
 <script>
-    var videoId1 = 'YBvIrvkuH3U';
-    var videoId2 = 'gMR9oAiRJTo';
+    var videoId1 = '{{ $article->video1 }}';
+    var videoId2 = '{{ $article->video2 }}';
 </script>
 <script src="js/historias.js"></script>

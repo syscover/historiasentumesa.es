@@ -1,6 +1,6 @@
 <div class="product_content__txt">
     <div class="col s10 m8 xl8 xxl7 product_content__intro-txt">
-        <p>Los cítricos valencianos protegidos engloban a los frutos del naranjo, mandarino y limonero. Unos referentes tanto nacionales como internacionales de nuestra cultura y de la comunidad autónoma que los ve nacer.</p>
+        <p>{{ $article->headerTxt }}</p>
     </div>
     <div class="sellos-container">
         <img src="../../img/sello-indicacion.svg" alt="Indicación de Origen Protegida"/>
@@ -16,10 +16,10 @@
         </div>
         <div class="row">
             <div class="col col-padding s12 m6">
-                <p class="font-sans-light">La zona de producción está constituida por las poblaciones productivas de las provincias de Castellón, Valencia y Alicante, que son las que reúnen las características idóneas para crear estos sabrosos y exquisitos productos.</p>
+                {!! $article->leftText !!}
             </div>
             <div class="col col-padding s12 m6">
-                <p class="font-sans">Los métodos de cultivo tradicionales, perfectamente combinados con las nuevas tecnologías y los sistemas más avanzados, son los que confieren a estos productos de unas cualidades, tanto físicas como organolépticas, únicas.</p>
+                {!! $article->rightText !!}
             </div>
         </div>
 
@@ -37,13 +37,13 @@
 
 
         <div class="link-txt font-black">
-            <a href="http://citricosvalencianos.com" class="hoverable-link-2" target="_blank">www.citricosvalencianos.com</a>
+            <a href="{{ $article->link }}" class="hoverable-link-2" target="_blank">{{ $article->textLink }}</a>
         </div>
     </div>
 </div>
 
 <script>
-    var videoId1 = '1YrWHkR05qg';
-    var videoId2 = 'zMDF5zkoHP4';
+    var videoId1 = '{{ $article->video1 }}';
+    var videoId2 = '{{ $article->video2 }}';
 </script>
 <script src="js/historias.js"></script>

@@ -1,6 +1,6 @@
 <div class="product_content__txt">
     <div class="col s10 m8 xl8 xxl7 product_content__intro-txt">
-        <p>Con sabor ligeramente ácido y salado; sus aromas evocan al campo menorquín y al mar que lo rodea, más intensos y complejos cuanto más curados.</p>
+        <p>{{ $article->headerTxt }}</p>
     </div>
     <div class="sellos-container">
         <img src="../../img/sello-denominacion.svg" alt="Denominación de Origen Protegida"/>
@@ -16,10 +16,10 @@
         </div>
         <div class="row">
             <div class="col col-padding s12 m6">
-                <p class="font-sans-light">Exclusivo de Menorca, reserva de la biosfera. Su situación en el Mediterráneo, su reducida superficie, la escasa orografía frente al viento de tramontana que saliniza los pastos, un clima benigno, con  mucho sol, el abundante rocío, una pluviosidad y humedad elevadas, son factores determinantes.</p>
+                {!! $article->leftText !!}
             </div>
             <div class="col col-padding s12 m6">
-                <p class="font-sans">Se elabora siguiendo una tradición ancestral, con la leche de vacas alimentadas con forrajes de la Isla; de forma artesanal, la cuajada se envuelve en el fogasser y se ata con el lligam, antes del prensado. En las cavas de maduración la corteza se voltea y se unta con aceite de oliva y pimentón.</p>
+                {!! $article->rightText !!}
             </div>
         </div>
 
@@ -37,13 +37,13 @@
 
 
         <div class="link-txt font-black">
-            <a href="http://www.quesomahonmenorca.com" class="hoverable-link-2" target="_blank">www.quesomahonmenorca.com</a>
+            <a href="{{ $article->link }}" class="hoverable-link-2" target="_blank">{{ $article->textLink }}</a>
         </div>
     </div>
 </div>
 
 <script>
-    var videoId1 = 'W3SCJfRxiQ8';
-    var videoId2 = 'SaAjdUqOKnE';
+    var videoId1 = '{{ $article->video1 }}';
+    var videoId2 = '{{ $article->video2 }}';
 </script>
 <script src="js/historias.js"></script>

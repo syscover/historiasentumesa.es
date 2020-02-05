@@ -1,6 +1,6 @@
 <div class="product_content__txt">
     <div class="col s10 m8 xl8 xxl7 product_content__intro-txt">
-        <p>Durante siglos ha pertenecido al ecosistema de la Dehesa en la Comunidad de Extremadura.  Las características tan particulares de este entorno hacen que sea el sistema de explotación de vacuno extensivo el mejor aliado en la relación hombre-ecosistema.</p>
+        <p>{{ $article->headerTxt }}</p>
     </div>
     <div class="sellos-container">
         <img src="../../img/sello-indicacion.svg" alt="Indicación de Origen Protegida"/>
@@ -16,10 +16,10 @@
         </div>
         <div class="row">
             <div class="col col-padding s12 m6">
-                <p class="font-sans-light">La explotación se realiza sobre la base de las distintas razas autóctonas adaptadas, aprovechando las variadas zonas del amplio territorio extremeño. Esto ha dado un producto con unas características únicas de obtención, elaboración y organolépticas.</p>
+                {!! $article->leftText !!}
             </div>
             <div class="col col-padding s12 m6">
-                <p class="font-sans">La alimentación y sistema productivo confieren unas características a la grasa en cuanto a infiltración, color, consistencia, brillo y textura. Esto junto con un estricto control desde origen hasta el etiquetado y certificado del producto hacen que se cumpla el dicho “de la dehesa, a la mesa”.</p>
+                {!! $article->rightText !!}
             </div>
         </div>
 
@@ -37,13 +37,13 @@
 
 
         <div class="link-txt font-black">
-            <a href="http://www.terneradeextremadura.org" class="hoverable-link-2" target="_blank">www.terneradeextremadura.org</a>
+            <a href="{{ $article->link }}" class="hoverable-link-2" target="_blank">{{ $article->textLink }}</a>
         </div>
     </div>
 </div>
 
 <script>
-    var videoId1 = 'wb268sJIZ-A';
-    var videoId2 = '0jMrBVcXJe0';
+    var videoId1 = '{{ $article->video1 }}';
+    var videoId2 = '{{ $article->video2 }}';
 </script>
 <script src="js/historias.js"></script>

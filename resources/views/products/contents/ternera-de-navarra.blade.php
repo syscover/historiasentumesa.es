@@ -1,6 +1,6 @@
 <div class="product_content__txt">
     <div class="col s10 m8 xl8 xxl7 product_content__intro-txt">
-        <p>La carne de Ternera de Navarra es única porque procede de terneros nacidos y criados en Navarra. Es una carne que se distingue por su bajo nivel de engrasamiento y su color puede ser rosa, rojo claro y rojo.</p>
+        <p>{{ $article->headerTxt }}</p>
     </div>
     <div class="sellos-container">
         <img src="../../img/sello-indicacion.svg" alt="Indicación de Origen Protegida"/>
@@ -16,11 +16,10 @@
         </div>
         <div class="row">
             <div class="col col-padding s12 m6">
-                <p class="font-sans-light">El mayor porcentaje de la carne proviene de animales de raza Pirenaica, autóctona de la zona, amamantados los primeros meses y alimentados en los pastos de Navarra.</p>
+                {!! $article->leftText !!}
             </div>
             <div class="col col-padding s12 m6">
-                <p class="font-sans">La IGP nació en 1994 con la intención de promocionar un alimento que no se conocía ni se valoraba lo suficiente: la carne de ternera originaria de Navarra, producida con métodos tradicionales. Así, con esfuerzo e ilusión, se creó este sello de calidad, que transmite al consumidor que nuestro modelo de producción es el que mejor garantiza la calidad y seguridad alimentaria de la carne de ternera.
-                </p>
+                {!! $article->rightText !!}
             </div>
         </div>
 
@@ -38,13 +37,13 @@
 
 
         <div class="link-txt font-black">
-            <a href="http://www.terneradenavarra.es" class="hoverable-link-2" target="_blank">www.terneradenavarra.es</a>
+            <a href="{{ $article->link }}" class="hoverable-link-2" target="_blank">{{ $article->textLink }}</a>
         </div>
     </div>
 </div>
 
 <script>
-    var videoId1 = 'p6RwvgMAk9Q';
-    var videoId2 = 'GWgVNpHuik4';
+    var videoId1 = '{{ $article->video1 }}';
+    var videoId2 = '{{ $article->video2 }}';
 </script>
 <script src="js/historias.js"></script>

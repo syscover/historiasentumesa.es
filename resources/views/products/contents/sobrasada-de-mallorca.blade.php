@@ -1,6 +1,6 @@
 <div class="product_content__txt">
     <div class="col s10 m8 xl8 xxl7 product_content__intro-txt">
-        <p>Se trata de un embutido crudo curado, elaborado con carnes seleccionadas de cerdo (magro y tocino) picadas, adicionadas de pimentón, sal y especias, amasadas, embutidas y curadas hasta obtener esta delicatesen para el paladar. </p>
+        <p>{{ $article->headerTxt }}</p>
     </div>
     <div class="sellos-container">
         <img src="../../img/sello-indicacion.svg" alt="Indicación de Origen Protegida"/>
@@ -16,10 +16,10 @@
         </div>
         <div class="row">
             <div class="col col-padding s12 m6">
-                <p class="font-sans-light">Al finalizar el proceso de curación tienen forma cilíndrica irregular, determinada por la morfología de la tripa. La superficie del embutido es de color rojo oscuro, lisa o ligeramente rugosa, con ausencia de enmohecimiento o enmohecimiento blanquecino. La pasta es blanda, inelástica, adherente, cohesionada, untuosa, poco fibrosa y de aspecto rojo marmóreo.</p>
+                {!! $article->leftText !!}
             </div>
             <div class="col col-padding s12 m6">
-                <p class="font-sans">La zona de elaboración y curación de la sobrasada coincide con la totalidad de la Isla de Mallorca, una tierra con unas características ambientales idóneas para generar un producto con un sabor y aroma característico, con clara influencia de la presencia de pimentón.</p>
+                {!! $article->rightText !!}
             </div>
         </div>
 
@@ -37,13 +37,13 @@
 
 
         <div class="link-txt font-black">
-            <a href="http://www.sobrasadademallorca.org" class="hoverable-link-2" target="_blank">www.sobrasadademallorca.org</a>
+            <a href="{{ $article->link }}" class="hoverable-link-2" target="_blank">{{ $article->textLink }}</a>
         </div>
     </div>
 </div>
 
 <script>
-    var videoId1 = 'wZu6jrfFiJY';
-    var videoId2 = 'ndmQTf8VCvs';
+    var videoId1 = '{{ $article->video1 }}';
+    var videoId2 = '{{ $article->video2 }}';
 </script>
 <script src="js/historias.js"></script>

@@ -1,6 +1,6 @@
 <div class="product_content__txt">
     <div class="col s10 m8 xl8 xxl7 product_content__intro-txt">
-        <p>En cada loncha, saboreas un trocito de la tierra que lo ve nacer. Un sueño para el paladar que te llevará a sus dehesas, a su clima cálido, al saber hacer tradicional de sus gentes...</p>
+        <p>{{ $article->headerTxt }}</p>
     </div>
     <div class="sellos-container">
         <img src="../../img/sello-denominacion.svg" alt="Denominación de Origen Protegida"/>
@@ -16,10 +16,10 @@
         </div>
         <div class="row">
             <div class="col col-padding s12 m6">
-                <p class="font-sans-light">Encinas, a cuyos pies aparece año tras año un tupido manto de hierba, planicies o colinas poco elevadas, serena belleza. El escenario ideal para el cerdo ibérico. En libertad, aprovechando las bellotas que, año tras año, generosamente les brinda la dehesa montanera.</p>
+                {!! $article->leftText !!}
             </div>
             <div class="col col-padding s12 m6">
-                <p class="font-sans">Recién cortado, preferiblemente a cuchillo, en lonchas lo más finas posibles, con la proporción adecuada entre magro y grasa, a temperatura ambiente, nunca frío... y sobre todo en el ambiente y la compañía ideal para disfrutarlo.</p>
+                {!! $article->rightText !!}
             </div>
         </div>
 
@@ -37,13 +37,13 @@
 
 
         <div class="link-txt font-black">
-            <a href="http://www.jamondolospedroches.es/web" class="hoverable-link-2" target="_blank">www.jamondolospedroches.es</a>
+            <a href="{{ $article->link }}" class="hoverable-link-2" target="_blank">{{ $article->textLink }}</a>
         </div>
     </div>
 </div>
 
 <script>
-    var videoId1 = 'dZ9NUrWQ0Xc';
-    var videoId2 = 'pgmOEt0gFrs';
+    var videoId1 = '{{ $article->video1 }}';
+    var videoId2 = '{{ $article->video2 }}';
 </script>
 <script src="js/historias.js"></script>

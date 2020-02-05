@@ -1,6 +1,6 @@
 <div class="product_content__txt">
     <div class="col s10 m8 xl8 xxl7 product_content__intro-txt">
-        <p>Se trata de un queso elaborado con leche de oveja de la raza Manchega, con una maduración mínima de 30 días, para quesos con peso igual o inferior a 1,5 Kg elaborados con leche pasteurizada, y de 60 días para el resto de formatos. Su pasta es firme y compacta, de color variable desde el blanco hasta el marfil amarillento, pudiendo presentar ojos pequeños desigualmente repartidos. Una delicia para los sentidos.</p>
+        <p>{{ $article->headerTxt }}</p>
     </div>
     <div class="sellos-container">
         <img src="../../img/sello-denominacion.svg" alt="Denominación de Origen Protegida"/>
@@ -16,10 +16,10 @@
         </div>
         <div class="row">
             <div class="col col-padding s12 m6">
-                <p class="font-sans-light">La zona de producción está constituida por términos municipales de las provincias de Albacete, Ciudad Real, Cuenca y Toledo, que constituyen la comarca de La Mancha. La zona de elaboración y maduración del queso manchego coincide con esta zona, para que no haya ningún tipo de alteración en el proceso.</p>
+                {!! $article->leftText !!}
             </div>
             <div class="col col-padding s12 m6">
-                <p class="font-sans">Su sabor es ácido, fuerte y sabroso llegando a ser picante en quesos muy curados. Un gusto agradable y peculiar que le confiere la leche de oveja manchega. </p>
+                {!! $article->rightText !!}
             </div>
         </div>
 
@@ -37,13 +37,13 @@
 
 
         <div class="link-txt font-black">
-            <a href="http://www.quesomanchego.es" class="hoverable-link-2" target="_blank">www.quesomanchego.es</a>
+            <a href="{{ $article->link }}" class="hoverable-link-2" target="_blank">{{ $article->textLink }}</a>
         </div>
     </div>
 </div>
 
 <script>
-    var videoId1 = 'prF4RGHB6Hc';
-    var videoId2 = 'A7kxJlIElRc';
+    var videoId1 = '{{ $article->video1 }}';
+    var videoId2 = '{{ $article->video2 }}';
 </script>
 <script src="js/historias.js"></script>

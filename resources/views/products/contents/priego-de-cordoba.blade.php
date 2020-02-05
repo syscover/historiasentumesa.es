@@ -1,6 +1,6 @@
 <div class="product_content__txt">
     <div class="col s10 m8 xl8 xxl7 product_content__intro-txt">
-        <p>Estos aceites de oliva vírgenes extra ofrecen un amplio abanico de posibilidades. Son aceites muy frutados con matices verdes y recuerdos a frutas y hortalizas frescas que presentan una gran complejidad y armonía. </p>
+        <p>{{ $article->headerTxt }}</p>
     </div>
     <div class="sellos-container">
         <img src="../../img/sello-denominacion.svg" alt="Denominación de Origen Protegida"/>
@@ -16,10 +16,10 @@
         </div>
         <div class="row">
             <div class="col col-padding s12 m6">
-                <p class="font-sans-light">El caprichoso y espectacular paisaje de  olivos centenarios y milenarios que pueblan las pendientes montañosas del Parque Natural y Geoparque de las Sierras Subbéticas, unas fértiles tierras y el esfuerzo y pasión que durante siglos han mostrado agricultores y elaboradores, nos dan unos aceites únicos y singulares.</p>
+                {!! $article->leftText !!}
             </div>
             <div class="col col-padding s12 m6">
-                <p class="font-sans">Todos los controles se realizan para garantizar el origen y la máxima calidad de este producto. Las variedades utilizadas para la obtención de este zumo excepcional de aceituna son Picuda, Hojiblanca y Picual. Una recolección efectuada solo en el momento óptimo. Ni antes ni después.</p>
+                {!! $article->rightText !!}
             </div>
         </div>
 
@@ -37,13 +37,13 @@
 
 
         <div class="link-txt font-black">
-            <a href="http://www.priegodecordoba.org" class="hoverable-link-2" target="_blank">www.priegodecordoba.org</a>
+            <a href="{{ $article->link }}" class="hoverable-link-2" target="_blank">{{ $article->textLink }}</a>
         </div>
     </div>
 </div>
 
 <script>
-    var videoId1 = 'Crt-6vugZVE';
-    var videoId2 = '1cUbPYsKQkU';
+    var videoId1 = '{{ $article->video1 }}';
+    var videoId2 = '{{ $article->video2 }}';
 </script>
 <script src="js/historias.js"></script>

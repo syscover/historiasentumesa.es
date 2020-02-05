@@ -1,6 +1,6 @@
 <div class="product_content__txt">
     <div class="col s10 m8 xl8 xxl7 product_content__intro-txt">
-        <p>Es condimento imprescindible de nuestra gastronomía; su aroma y sabor delicados aporta a nuestros platos un toque diferente, el sabor de la tradición.</p>
+        <p>{{ $article->headerTxt }}</p>
     </div>
     <div class="sellos-container">
         <img src="../../img/sello-denominacion.svg" alt="Denominación de Origen Protegida"/>
@@ -16,10 +16,10 @@
         </div>
         <div class="row">
             <div class="col col-padding s12 m6">
-                <p class="font-sans-light">Sólo en la Comarca de La Vera, con un clima suave de otoños lluviosos, podía surgir el Pimentón de la Vera, para impregnar de aromas únicos nuestros elaborados cárnicos.</p>
+                {!! $article->leftText !!}
             </div>
             <div class="col col-padding s12 m6">
-                <p class="font-sans">Con una recogida manual de los frutos de pimiento maduros, el secado lento sobre hogar de leña, y la molienda con piedra de esmeril, hacen del Pimentón de La Vera una exquisitez de nuestra cultura gastronómica.</p>
+                {!! $article->rightText !!}
             </div>
         </div>
 
@@ -37,13 +37,13 @@
 
 
         <div class="link-txt font-black">
-            <a href="http://www.pimentonvera-origen.com" class="hoverable-link-2" target="_blank">www.pimentonvera-origen.com</a>
+            <a href="{{ $article->link }}" class="hoverable-link-2" target="_blank">{{ $article->textLink }}</a>
         </div>
     </div>
 </div>
 
 <script>
-    var videoId1 = 'bkI5K7R3Tgo';
-    var videoId2 = '5CI21qilUG8';
+    var videoId1 = '{{ $article->video1 }}';
+    var videoId2 = '{{ $article->video2 }}';
 </script>
 <script src="js/historias.js"></script>

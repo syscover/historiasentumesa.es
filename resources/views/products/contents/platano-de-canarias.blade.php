@@ -1,6 +1,6 @@
 <div class="product_content__txt">
     <div class="col s10 m8 xl8 xxl7 product_content__intro-txt">
-        <p>El Plátano de Canarias es una de las frutas más representativas de nuestros país.  Con cualidades únicas entre las que destaca su sabor dulce y apariencia exterior con motitas, constituye un alimento completo y saludable para pequeños y mayores. Ninguna otra banana del mundo cuenta con sello de calidad europeo, lo que nos refleja su carácter realmente único.</p>
+        <p>{{ $article->headerTxt }}</p>
     </div>
     <div class="sellos-container">
         <img src="../../img/sello-indicacion.svg" alt="Indicación de Origen Protegida"/>
@@ -16,10 +16,10 @@
         </div>
         <div class="row">
             <div class="col col-padding s12 m6">
-                <p class="font-sans-light">El Archipiélago de las Islas Canarias está constituido por una compleja orografía de origen volcánico y clima templado gracias a los vientos alisios. Estas temperaturas suaves alimentan en un clima subtropical una fruta que encuentra así un desarrollo mucho más lento pero que le permite adquirir propiedades diferentes a las bananas de otros países.</p>
+                {!! $article->leftText !!}
             </div>
             <div class="col col-padding s12 m6">
-                <p class="font-sans">Cualquier momento del día y lugar son apropiados para su consumo en fresco, el más habitual en los más de 16 millones de hogares que lo consumen durante el año en España.</p>
+                {!! $article->rightText !!}
             </div>
         </div>
 
@@ -37,13 +37,13 @@
 
 
         <div class="link-txt font-black">
-            <a href="http://www.platanodecanarias.net" class="hoverable-link-2" target="_blank">www.platanodecanarias.net</a>
+            <a href="{{ $article->link }}" class="hoverable-link-2" target="_blank">{{ $article->textLink }}</a>
         </div>
     </div>
 </div>
 
 <script>
-    var videoId1 = 'hezJ481orgQ';
-    var videoId2 = 'Uq-AbqgSMqY';
+    var videoId1 = '{{ $article->video1 }}';
+    var videoId2 = '{{ $article->video2 }}';
 </script>
 <script src="js/historias.js"></script>

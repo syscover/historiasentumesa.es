@@ -1,6 +1,6 @@
 <div class="product_content__txt">
     <div class="col s10 m8 xl8 xxl7 product_content__intro-txt">
-        <p>Este producto tan valorado y suculento, posee una corteza blanda, delgada, untuosa, de color gris con zonas amarillo-rojizas. La pasta es de consistencia untuosa, aunque con diferente grado de cohesión, según el mayor o menor tiempo de maduración del queso en cueva.</p>
+        <p>{{ $article->headerTxt }}</p>
     </div>
     <div class="sellos-container">
         <img src="../../img/sello-denominacion.svg" alt="Denominación de Origen Protegida"/>
@@ -16,10 +16,10 @@
         </div>
         <div class="row">
             <div class="col col-padding s12 m6">
-                <p class="font-sans-light">La zona de producción de leche y elaboración de queso Cabrales está constituida por los pueblos de Arangas, Arenas, Asiego, Berodia, Bulnes, Camarmeña, Canales, Carreña, El Escobar, Inguanzo, La Molina, La Salce, Ortiguero, Pandiello, Puertas, Poo, Sotres y Tielve del municipio de Cabrales y los pueblos de Oceño, Cáraves y Rozagás del municipio de Peñamellera Alta.</p>
+                {!! $article->leftText !!}
             </div>
             <div class="col col-padding s12 m6">
-                <p class="font-sans">Tanto la leche de los animales como el queso elaborado están determinadas por un exhaustivo control y unas técnicas que garantizan la extraordinaria calidad de este producto.</p>
+                {!! $article->rightText !!}
             </div>
         </div>
 
@@ -36,13 +36,13 @@
 
 
         <div class="link-txt font-black">
-            <a href="http://www.quesocabrales.org" class="hoverable-link-2" target="_blank">www.quesocabrales.org</a>
+            <a href="{{ $article->link }}" class="hoverable-link-2" target="_blank">{{ $article->textLink }}</a>
         </div>
     </div>
 </div>
 
 <script>
-    var videoId1 = 'keWwTnTQwmU';
-    var videoId2 = 'pxte5Uq5cow';
+    var videoId1 = '{{ $article->video1 }}';
+    var videoId2 = '{{ $article->video2 }}';
 </script>
 <script src="js/historias.js"></script>

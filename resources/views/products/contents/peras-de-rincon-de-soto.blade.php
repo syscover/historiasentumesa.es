@@ -1,6 +1,6 @@
 <div class="product_content__txt">
     <div class="col s10 m8 xl8 xxl7 product_content__intro-txt">
-        <p>Se trata de las primeras peras en España que poseen la protección y garantía que aportan los sellos. Y no es de extrañar, ya que estamos ante un producto con unas características organolépticas y de calidad excepcionales, destacando su alto contenido en fructosa que les da su intenso sabor.</p>
+        <p>{{ $article->headerTxt }}</p>
     </div>
     <div class="sellos-container">
         <img src="../../img/sello-denominacion.svg" alt="Denominación de Origen Protegida"/>
@@ -16,10 +16,10 @@
         </div>
         <div class="row">
             <div class="col col-padding s12 m6">
-                <p class="font-sans-light">Estas peras se cultivan desde el siglo XVII, de tal forma que se han establecido unas características propias de cultivo por parte de los agricultores, y de manipulación por parte de las centrales hortofrutícolas.</p>
+                {!! $article->leftText !!}
             </div>
             <div class="col col-padding s12 m6">
-                <p class="font-sans">El microclima especial de la zona dota a esta fruta de unas características especiales, ya que se cultivan en un clima típicamente mediterráneo (La Rioja) pero en el límite con climas atlánticos y de montaña, lo que les aporta sus características excepcionales.</p>
+                {!! $article->rightText !!}
             </div>
         </div>
 
@@ -37,13 +37,13 @@
 
 
         <div class="link-txt font-black">
-            <a href="http://www.perasderincondesoto.com/" class="hoverable-link-2" target="_blank">www.perasderincondesoto.com</a>
+            <a href="{{ $article->link }}" class="hoverable-link-2" target="_blank">{{ $article->textLink }}</a>
         </div>
     </div>
 </div>
 
 <script>
-    var videoId1 = 'GcAwN6ZpqJ4';
-    var videoId2 = '5Y8l8j5XF-c';
+    var videoId1 = '{{ $article->video1 }}';
+    var videoId2 = '{{ $article->video2 }}';
 </script>
 <script src="js/historias.js"></script>

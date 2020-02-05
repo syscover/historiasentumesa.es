@@ -1,6 +1,6 @@
 <div class="product_content__txt">
     <div class="col s10 m8 xl8 xxl7 product_content__intro-txt">
-        <p>Durante más de 500 dulces años, los maestros turroneros de Jijona han conservado y trasmitido de padres a hijos, el buen hacer en la elaboración de sus turrones a la manera tradicional, con técnicas y utensilios autóctonos que transforman sus seleccionadas materias primas y dotan al producto de su sabor y calidad inconfundible.</p>
+        <p>{{ $article->headerTxt }}</p>
     </div>
     <div class="sellos-container">
         <img src="../../img/sello-indicacion.svg" alt="Indicación de Origen Protegida"/>
@@ -16,10 +16,10 @@
         </div>
         <div class="row">
             <div class="col col-padding s12 m6">
-                <p class="font-sans-light">La zona de producción de turrones con indicación geográfica se sitúa en Jijona, en la provincia de Alicante. La reputación y el prestigio se basan en: ingredientes naturales (almendras tostadas, miel, azúcar y clara de huevo), las técnicas tradicionales y buen hacer de las manos artesanas del maestro turronero.</p>
+                {!! $article->leftText !!}
             </div>
             <div class="col col-padding s12 m6">
-                <p class="font-sans">Una perfecta mezcla de ingredientes naturales de gran calidad, que dan como resultado unos turrones excepcionales.</p>
+                {!! $article->rightText !!}
             </div>
         </div>
 
@@ -37,13 +37,13 @@
 
 
         <div class="link-txt font-black">
-            <a href="http://www.jijona.com" class="hoverable-link-2" target="_blank">www.jijona.com</a>
+            <a href="{{ $article->link }}" class="hoverable-link-2" target="_blank">{{ $article->textLink }}</a>
         </div>
     </div>
 </div>
 
 <script>
-    var videoId1 = 'gxjTLL-21Ck';
-    var videoId2 = 'e9P-nzTPkwc';
+    var videoId1 = '{{ $article->video1 }}';
+    var videoId2 = '{{ $article->video2 }}';
 </script>
 <script src="js/historias.js"></script>

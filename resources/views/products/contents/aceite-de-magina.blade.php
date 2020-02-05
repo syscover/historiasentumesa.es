@@ -16,10 +16,10 @@
         </div>
         <div class="row">
             <div class="col col-padding s12 m6">
-                <p class="font-sans-light">La zona de Sierra Mágina abarca 15 municipios de la provincia de Jaén, con olivar tradicional de montaña, siendo su cultivo la principal actividad de este territorio, donde además se sitúan las almazaras que  extraen y embotellan estos aceites vírgenes extra con las máximas garantías de origen y calidad.</p>
+                {!! $article->leftText !!}
             </div>
             <div class="col col-padding s12 m6">
-                <p class="font-sans">Se trata de un aceite extraordinario como resultado del esmero de los propios olivareros en la recolección, y del máximo cuidado de las almazaras en su extracción a baja temperatura. Y todos los procesos tienen un control de calidad garantizado por el Consejo Regulador.</p>
+                {!! $article->rightText !!}
             </div>
         </div>
 
@@ -37,13 +37,13 @@
 
 
         <div class="link-txt font-black">
-            <a href="http://www.sierramagina.org" class="hoverable-link-2" target="_blank">www.sierramagina.org</a>
+            <a href="{{ $article->link }}" class="hoverable-link-2" target="_blank">{{ $article->textLink }}</a>
         </div>
     </div>
 </div>
 
 <script>
-    var videoId1 = 'nOKYVe4I6Z8';
-    var videoId2 = 'panMFAbvcVI';
+    var videoId1 = '{{ $article->video1 }}';
+    var videoId2 = '{{ $article->video2 }}';
 </script>
 <script src="js/historias.js"></script>
